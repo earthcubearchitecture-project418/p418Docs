@@ -1,15 +1,17 @@
 ### Notepad and scratch space
 
 #### Non-source repositories 
-p418Docs
-p418Notebooks
-p418Vocabulary
+
+* p418Docs
+* p418Notebooks
+* p418Vocabulary
+* p418DataStores
+
 
 #### earthcube.org/Project418
-DataStores
-Garden
-Indexers
-Services
-Transcoders
-Walker
-Web
+* garden
+* indexers
+* services
+* transcoders
+* crawler
+* webui
