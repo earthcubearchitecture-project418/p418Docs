@@ -1,0 +1,41 @@
+version: '2'
+
+services:
+  traefik:
+    image: traefik
+    command: --web --docker --docker.domain=docker.localhost --logLevel=DEBUG
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dataVolumes/traefik/traefik.toml:/traefik.toml
+      - /dataVolumes/traefik/acme:/acme
+    networks:
+      - traefik_default
+
+  p418webui:
+    image: earthcube/p418webui:latest
+    labels:
+      - "traefik.backend=p418webui"
+      - "traefik.frontend.rule=Host:geodex.org"
+    networks:
+      - traefik_default
+
+  s3system:
+    image: minio/minio:latest
+    labels:
+      - "traefik.backend=s3system"
+      - "traefik.frontend.rule=Host:geodex.org;PathPrefix:/minio"
+      - "traefik.port=9000"
+    volumes:
+      - /dataVolumes/s3:/data
+    environment:
+      - MINIO_ACCESS_KEY=YUUUWSRXEXACIGAWNPKJ
+      - MINIO_SECRET_KEY=AJFZEOXAQEELRCGFIJZS
+    networks:
+      - traefik_default
+    command: ["server", "/data"]
+
+networks:
+  traefik_default:
