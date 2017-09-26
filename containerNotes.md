@@ -5,12 +5,7 @@
 * The main data volume is at /dataVolumes
 * Many of the details of how a container is run are located in the various Docker compose files used
 
-
-These are some notes on the various containers and settings.
-
-
-##### Minio
-
-
+### Compose files
+Look in the docker directory of this repository for the compose files we use.
 
 
