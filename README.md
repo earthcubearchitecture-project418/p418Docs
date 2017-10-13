@@ -1,7 +1,10 @@
 ### Project 418
 
-#### About
+* [Hosting Notes](hosting.md)
+* [References](references.md)
+* [Presentation](./presentations)
 
+#### About
 ##### Philosophy:   
 \#UseThePlatform
 ##### Keywords: 
@@ -22,5 +25,29 @@ Tech notes:  The harvesting will follow web architecture practices as well.  Thi
 Tech notes:  Key types exposed will include schema.org/DataSet and schema.org/DataCatalog leveraging work with schema.org led by RPI to establish these key types.  Additionally work by the CDF RWG leveraging re3data resources will provide guidance on exposing information about a facility in general and also related to service endpoints (RESTful, OGC, others).   This will be done following HTML5 microdata approaches using JSON-LD as a publishing approaches.   
 
 While standards based, these specific approaches are arguably not common yet and guidance will need to be available to both providers and consumers.     The approaches do use standard web publishing and web architecture elements however, so there is likely to native skills and competency present at the facilities.  
+
+##### Collaboration and Connections
+
+###### Google Research
+There is a common goal between P418 and some current activity at Google Research.  The work at Google is related to the creation of a data search portal driven by the presence of schema.org/Dataset type documents at data landing pages.  Google is reaching out to various groups and agencies worldwide (USGS, Marine.ie, others) to assess the existing landscape.   They have a time schedule quite similar to what we are working on with P418
+
+>Note:
+>Google has offered to help with guidance and feedback for groups working to publish along these patterns.  They can also potentially push indexing request “up the queue” to allow quicker turnaround on site indexing for testing and edit loops than is typical.  
+
+At this time three groups on the CDF are publishing or soon will be along these patterns (OpenCore, BCO-DMO, Neotoma).  
+
+During talks with Google the following phrase has been agreed on to describe our common interest and correctly expressing interest without inferring any commitment by any party.
+ 
+> Both Google and EarthCube CDF are interested in making datasets more discoverable through the use of structured markup. CDF is acting as a representative body for the various NSF funded CDF members interested in actively engaging in adding markup to datasets using schema.org. CDF will act as a point of contact and means to distribute status and help related to groups exploring and implementing schema.org in dataset landing pages. CDF also has points of contact within Google who may be able to help answer questions and share details about the project."
+
+Refs:
+* Guides https://developers.google.com/search/docs/data-types/datasets 
+* Original blog post: https://research.googleblog.com/2017/01/facilitating-discovery-of-public.html 
+* Google Job Search: https://careers.google.com/jobs 
+* Google Scholar: https://scholar.google.com/ 
+* Sitemap protocol https://www.sitemaps.org/protocol.html 
+    * http://149.165.168.129/sitemap.xml  and http://149.165.168.129/xsedesitemap.xml
+    * http://149.165.168.129/doc/dataset/bcd15975-680c-47db-a062-ac0bb6e66816 
+    * [Above landing page run through Google Structure Data Testing](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F149.165.168.129%2Fdoc%2Fdataset%2Fbcd15975-680c-47db-a062-ac0bb6e66816)  Note only focus on detected *dataset* as there are errors in other JSON-LD in this page at this time. 
 
 

@@ -10,8 +10,6 @@ aspect of P418
 * schema.org external vocabulary 
 
 
-
-
 #### Web issues and discussion threads
 
 ##### schema.org issues for review
