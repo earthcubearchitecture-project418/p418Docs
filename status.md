@@ -1,5 +1,5 @@
 ### A rolling status update document
-#### revised Oct 29th 2017 
+#### Revised Oct 29th 2017 
 
 
 ### Functional Goals
@@ -76,4 +76,19 @@ The ability to frame data out of the graph fragments represented by the semantic
 has several use cases.   One will be to use this approach to connect datasets to hosting facilities and 
 the on to a potential record for that facility at a place like [RE3Data](http://re3data.org).
 
+#### Footnote 4:
+Search function tree: This sketch is included as a discussion aid.  It represents an initial 
+assessment of potential search *vectors* that the indexing could potentially support.  It's 
+unlikely all these vectors will be fully realized.  However, this acts as a strong guide for
+development of the indexes, UIs and services. 
 
+![Search Function Tree](./images/searchFunctionTree.png)
+
+
+
+#### Footnote 5:
+UI concepts: This sketch is included as a discussion aid.  It highlights some of the
+potential functional goals included data resources assessment and data affordances (the actionable properties between the world and an actor) connections
+among other features.  
+
+![User interface concepts](./images/ui.png)
