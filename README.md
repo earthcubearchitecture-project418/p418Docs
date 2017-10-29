@@ -1,8 +1,9 @@
 ### Project 418
 
 * [Hosting Notes](hosting.md)
-* [References](references.md)
+* [Publishing](publishing.md)
 * [Presentation](./presentations)
+* [Status](./status.md)
 
 #### About
 ##### Philosophy:   
