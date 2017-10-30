@@ -3,22 +3,23 @@
 
 
 ### Functional Goals
-The following blockquote items represent the next set of functional 
+The following block quote items represent the next set of functional 
 goals for P418.  These goals will help prioritize and drive development
 of the items in the *Outline of activities*
 
 
 > Demonstrate we can read at least two domains and via sitemap.xml and process 
-> the content into both text and graph indexes
+> the content into both text and graph indexes.
 
-> Demonstrate JSON-LD framing for file info and spatial data
+> Demonstrate JSON-LD framing for file info and spatial data.
 
-> Demonstrate RESTfull calls for the text index and potentially the graph index
+> Demonstrate RESTful calls for the text index and potentially the graph index.
 
 > Demonstrate access to full semantic metadata in indexes on a per resource level to 
-> support detail views on resources matching search criteria in UI or service calls
+> support detail views on resources matching search criteria in UI or service calls.
 
-> Demonstrate passing information from indexes to UI that supports basic tool actions
+> Demonstrate passing information from indexes to a UI that supports basic tool actions.  This UI 
+> might be a notebook, rather than web based. 
 
 
 ### Outline of activities
@@ -50,10 +51,10 @@ of the items in the *Outline of activities*
     - [ ] Temporal indexer
 1. Interface task list.  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
-    - [ ] Service call for text index search (RESTfull)
-    - [ ] Web based UI (can be more than one)
-    - [ ] Notebook based UI (needs services in x.x first)
-    - [ ] Web component development for easy UI development
+    - [ ] Service call for text index search (RESTful)  (See Footnote 4)
+    - [ ] Web based UI (can be more than one) (See Footnote 5)
+    - [ ] Notebook based UI (needs services first)
+    - [ ] Web component development for easy UI development  (Downstream activity)
 
 
 
@@ -83,8 +84,6 @@ unlikely all these vectors will be fully realized.  However, this acts as a stro
 development of the indexes, UIs and services. 
 
 ![Search Function Tree](./images/searchFunctionTree.png)
-
-
 
 #### Footnote 5:
 UI concepts: This sketch is included as a discussion aid.  It highlights some of the
