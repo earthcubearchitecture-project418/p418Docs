@@ -41,26 +41,38 @@ of the items in the *Outline of activities*
         - [ ] for spatial (See Footnote 1)
         - [ ] for download ref (location and type) (See Footnote 2)
         - [ ] for organization info (See Footnote 3) 
-1. Indexing activity
+1. Indexing activity: A simple monolithic crawl / indexing structure is currently pseudo coded for now.  A representation of this is seen in Footnote 4.  
     - [ ] Resolution of GRPC or microservice pattern for crawler to index connections.  This 
     may be a bit different given the sitemap pattern making concurrency easier to implement. 
     - [x] Bleve indexer update  prototype
-    - [x] JSON-LD indexer blank node resolution
+    - [x] JSON-LD indexer blank node resolution issue
     - [ ] RDF indexer
     - [ ] Spatial indexer
     - [ ] Temporal indexer
-1. Interface task list.  As part of this we will also be exploring connections to existing and 
+1. Interface task list:  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
-    - [ ] Service call for text index search (RESTful)  (See Footnote 4)
-    - [ ] Web based UI (can be more than one) (See Footnote 5)
+    - [ ] Service call for text index search (RESTful)  (See Footnote 5)
+    - [ ] Web based UI (can be more than one) (See Footnote 6)
     - [ ] Notebook based UI (needs services first) [placeholder](https://github.com/earthcubearchitecture-project418/p418Notebooks/blob/master/Notebook1.ipynb)
     - [ ] Web component development for easy UI development  (Downstream activity)
 
 
+### Points of discussion
+
+ ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) RedFlag Item:
+ There is no clear path to incremental updates of the indexes at this time.  The current practice 
+ will be to rebuild the index.  Updating the RDF triple store should be relatively straightforward. 
+ Additionally the spatial index likely will allow updating a resource on a per ID basis.  The process
+ for Bleve is less clear but hasn't been researched.  
+
+
+### Footnotes
+
 #### Footnote 1:
 Spatial API will be generated in conformance with the [Flyover Country](http://fc.umn.edu/) pattern
 like that implemented in Open Core Data.  This will allow the app to request datasets spatial 
-present along a given flight track.
+present along a given flight track.  The index will likely be a geohash based approach 
+using something like a S2 library.  
 
 
 #### Footnote 2:
@@ -76,6 +88,12 @@ has several use cases.   One will be to use this approach to connect datasets to
 the on to a potential record for that facility at a place like [RE3Data](http://re3data.org).
 
 #### Footnote 4:
+A high level overview of the indexing process as it stands now.  The "crawler" simply accesses and 
+processes sitemaps.  These URLs are concurrently processed through spatial, graph and text indexers.
+
+![Indexing flow](./images/indexer.png)
+
+#### Footnote 5:
 Search function tree: This sketch is included as a discussion aid.  It represents an initial 
 assessment of potential search *vectors* that the indexing could potentially support.  It's 
 unlikely all these vectors will be fully realized.  However, this acts as a strong guide for
@@ -83,7 +101,7 @@ development of the indexes, UIs and services.
 
 ![Search Function Tree](./images/searchFunctionTree.png)
 
-#### Footnote 5:
+#### Footnote 6:
 UI concepts: This sketch is included as a discussion aid.  It highlights some of the
 potential functional goals included data resources assessment and data affordances (the actionable properties between the world and an actor) connections
 among other features.  
