@@ -1,5 +1,5 @@
 ### A rolling status update document
-#### Revised Oct 29th 2017 
+#### Revised Oct 30th 2017 
 
 
 ### Functional Goals
@@ -32,7 +32,7 @@ of the items in the *Outline of activities*
 1. Provider outreach
      - [ ] develop out [publishing document](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md)
      - [ ] pattern to include file mime type (for connections)
-     - [ ] pattern to include/find facility reference UUID (needed for section 3 org info framing)
+     - [ ] pattern to include/find facility  UUID (for facility connections)
      - [ ] Coordination with Google interest Ref: [Publishing](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md)
      - [ ] DataCite API
 1. Crawling activity
@@ -53,10 +53,8 @@ of the items in the *Outline of activities*
 past EarthCube funded projects. 
     - [ ] Service call for text index search (RESTful)  (See Footnote 4)
     - [ ] Web based UI (can be more than one) (See Footnote 5)
-    - [ ] Notebook based UI (needs services first)
+    - [ ] Notebook based UI (needs services first) [placeholder](https://github.com/earthcubearchitecture-project418/p418Notebooks/blob/master/Notebook1.ipynb)
     - [ ] Web component development for easy UI development  (Downstream activity)
-
-
 
 
 #### Footnote 1:
