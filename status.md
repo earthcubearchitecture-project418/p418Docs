@@ -1,5 +1,5 @@
 ### A rolling status update document
-#### Revised Oct 30th 2017 
+#### Revised Oct 31th 2017 
 
 
 ### Functional Goals
@@ -46,9 +46,9 @@ of the items in the *Outline of activities*
     may be a bit different given the sitemap pattern making concurrency easier to implement. 
     - [x] Bleve indexer update  prototype
     - [x] JSON-LD indexer blank node resolution issue
-    - [ ] RDF indexer
-    - [ ] Spatial indexer
-    - [ ] Temporal indexer
+    - [ ] RDF indexer    (approach identified, was held up by blocking event on blank nodes..  resolved now)
+    - [ ] Spatial indexer  (geohash approach identified and selected)
+    - [ ] Temporal indexer  (Possible back-ends include Timescale (+1) or Prometheus...   internal data model not set yet though)
 1. Interface task list:  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
     - [ ] Service call for text index search (RESTful)  (See Footnote 5)
@@ -59,11 +59,13 @@ past EarthCube funded projects.
 
 ### Points of discussion
 
- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) RedFlag Item:
- There is no clear path to incremental updates of the indexes at this time.  The current practice 
- will be to rebuild the index.  Updating the RDF triple store should be relatively straightforward. 
- Additionally the spatial index likely will allow updating a resource on a per ID basis.  The process
- for Bleve is less clear but hasn't been researched.  
+ ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Note:
+ We still need to integrate update logic into the indexer.   Updating the RDF triple 
+ store should be relatively straightforward, though a bit tedious as envisioned now.  
+ Additionally, the spatial index likely will allow updating a resource on a per ID basis.  As 
+ a KV store, it should be easier to address.   The process
+ for Bleve is less clear (as in I haven't looked at it) so whether it is easy or hard is an 
+ unknown.  
 
 
 ### Footnotes
