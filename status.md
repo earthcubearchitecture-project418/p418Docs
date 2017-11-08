@@ -1,6 +1,17 @@
 ### A rolling status update document
 #### Revised Oct 31th 2017 
 
+### Working timeline
+* [Short term timeline](./assets/shortTermTimeline.pdf)
+
+A short term timeline has been developed showing some of the next steps.  The main goals
+shown on this are to:
+
+* finish the vocabulary to enable facility and data set description in JSON-LD
+* get the indexers (text, spatial, graph) online (temporal to follow)
+* APIs for use by notebooks and other UIs
+* facility publishing engagement 
+
 
 ### Functional Goals
 The following block quote items represent the next set of functional 
@@ -8,10 +19,10 @@ goals for P418.  These goals will help prioritize and drive development
 of the items in the *Outline of activities*
 
 
-> Demonstrate we can read at least two domains and via sitemap.xml and process 
+> [x] Demonstrate we can read at least two domains and via sitemap.xml and process 
 > the content into both text and graph indexes.
 
-> Demonstrate JSON-LD framing for file info and spatial data.
+> [x] Demonstrate JSON-LD framing for file info and spatial data.
 
 > Demonstrate RESTful calls for the text index and potentially the graph index.
 
@@ -33,10 +44,10 @@ of the items in the *Outline of activities*
      - [ ] develop out [publishing document](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md)
      - [ ] pattern to include file mime type (for connections)
      - [ ] pattern to include/find facility  UUID (for facility connections)
-     - [ ] Coordination with Google interest Ref: [Publishing](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md)
+     - [ ] Coordination with Google interest Ref: [publishing document](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md)
      - [ ] DataCite API
 1. Crawling activity
-    - [ ] Update crawling code to simpler sitemap approach
+    - [x] Update crawling code to simpler sitemap approach
     - [ ] Implement JSON-LD framing code 
         - [ ] for spatial (See Footnote 1)
         - [ ] for download ref (location and type) (See Footnote 2)
@@ -46,8 +57,8 @@ of the items in the *Outline of activities*
     may be a bit different given the sitemap pattern making concurrency easier to implement. 
     - [x] Bleve indexer update  prototype
     - [x] JSON-LD indexer blank node resolution issue
-    - [ ] RDF indexer    (approach identified, was held up by blocking event on blank nodes..  resolved now)
-    - [ ] Spatial indexer  (geohash approach identified and selected)
+    - [x] RDF indexer    (approach identified, was held up by blocking event on blank nodes..  resolved now)
+    - [x] Spatial indexer  (geohash approach identified and selected)
     - [ ] Temporal indexer  (Possible back-ends include Timescale (+1) or Prometheus...   internal data model not set yet though)
 1. Interface task list:  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
