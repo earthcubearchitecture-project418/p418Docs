@@ -1,5 +1,5 @@
 ### A rolling status update document
-#### Revised Oct 31th 2017 
+#### Revised Nov 8th 2017 
 
 ### Working timeline
 * [Short term timeline](./assets/shortTermTimeline.pdf)
