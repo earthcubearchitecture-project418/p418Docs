@@ -1,14 +1,15 @@
 ### Publishing
 
 #### About
-This document describes some of the steps and resources that those interested in publishing semantic 
+Interested in publishing semantic metadata to support data set discovery?  This document describes some of the steps and resources that those interested in publishing semantic 
 metadata along the schema.org patterns can use.  
 
 #### Basics
-The quick goal for the providers will simply be to:
-1. Be able to generate and include JSON-LD semantic metadata using schema.org/Dataset (see Ref 6) terms in the landing 
-page of some set of data resources
+The quick start for the providers will simply be to:
+1. Be able to generate and include JSON-LD semantic metadata using schema.org/Dataset (see Ref 6) terms in the landing page of some set of data resources.  Your best place to start are the Google
+resources [1] and [2]
 1. Create a sitemap for these URLs (see Ref 5)
+1. Tell P418 about it!
 
 For further information on the approach and the various types and properties being looked 
 for consult ref 1 and 2.  
@@ -41,7 +42,7 @@ make claims about a domain your document doesn't reside at.
 2. It will take valid JSON-LD with external references to other vocabularies and complain they are errors. 
 They are not errors, just terms and properties the tester does not know about.   I've talked with 
 Google and they have assured me this does not affect the parsing and use of the data by Google.  
-3. The tools doesn't see pending terms, only those in the active release (last I noticed)
+3. The tools doesn't see pending terms, only those in the active release (last I checked anyway)
 
 #### Sitemap
 The guidance is to create sitemaps that contain links to your data sets.  These sitemaps should 
