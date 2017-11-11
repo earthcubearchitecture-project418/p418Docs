@@ -1,0 +1,428 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "datacite": "http://purl.org/spar/datacite/",
+    "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+    "geolink": "http://schema.geolink.org/1.0/base/main#",
+    "vivo": "http://vivoweb.org/ontology/core#"
+  },
+  "@id": "https://adam.bco-dmo.org/dataset/472032",
+  "identifier": [
+    "http://lod.bco-dmo.org/id/dataset/472032",
+    {
+      "@type": "PropertyValue",
+      "additionalType": [
+        "geolink:Identifier",
+        "datacite:Identifier"
+      ],
+      "@id": "https://doi.org/10.1575/1912/bco-dmo.665253",
+      "propertyID": "datacite:doi",
+      "value": "10.1575/1912/bco-dmo.665253",
+      "url": "https://doi.org/10.1575/1912/bco-dmo.665253"
+    }
+  ],
+  "url": "https://adam.bco-dmo.org/dataset/472032",
+  "@type": "Dataset",
+  "name": "Removal of organic carbon by natural bacterioplankton communities as a function of pCO2 from laboratory experiments between 2012 and 2016",
+  "additionalType": [
+    "geolink:Dataset",
+    "vivo:Dataset"
+  ],
+  "alternateName": "Data Set 3A: Utilization of dissolved organic carbon by a natural bacterial community as a function of pCO2",
+  "description": "Data Set #3A: Utilization of dissolved organic carbon by a natural bacterial community as a function of pCO2 ",
+  "datePublished": "2016-12-05",
+  "keywords": "ocean acidification, OA, Dissolved Organic Carbon, DOC, bacterioplankton respiration, pCO2, carbon dioxide, elevated pCO2, oceans",
+  "creator": [
+    {
+      "@type": "Person",
+      "additionalType": "geolink:Person",
+      "@id": "https://adam.bco-dmo.org/person/51317",
+      "name": "Dr Uta Passow",
+      "url": "https://adam.bco-dmo.org/person/51317"
+    },
+    {
+      "@type": "Person",
+      "additionalType": "geolink:Person",
+      "@id": "https://adam.bco-dmo.org/person/50663",
+      "name": "Dr Mark Brzezinski",
+      "url": "https://adam.bco-dmo.org/person/50663",
+      "identifier": {
+        "@type": "PropertyValue",
+        "additionalType": [
+          "geolink:Identifier",
+          "datacite:Identifier"
+        ],
+        "propertyID": "datacite:orcid",
+        "value": "0000-0003-3432-2297",
+        "url": "https://orcid.org/0000-0003-3432-2297"
+      }
+    },
+    {
+      "@type": "Person",
+      "additionalType": "geolink:Person",
+      "@id": "https://adam.bco-dmo.org/person/50575",
+      "name": "Dr Craig Carlson",
+      "url": "https://adam.bco-dmo.org/person/50575",
+      "identifier": {
+        "@type": "PropertyValue",
+        "additionalType": [
+          "geolink:Identifier",
+          "datacite:Identifier"
+        ],
+        "propertyID": "datacite:orcid",
+        "value": "0000-0003-2591-5293",
+        "url": "https://orcid.org/0000-0003-2591-5293"
+      }
+    },
+    {
+      "@type": "Person",
+      "additionalType": "geolink:Person",
+      "@id": "https://adam.bco-dmo.org/person/471722",
+      "name": "Ms Anna James",
+      "url": "https://adam.bco-dmo.org/person/471722"
+    }
+  ],
+  "citation": "Passow, U., Brzezinski, M., Carlson, C. (2016) Removal of organic carbon by natural bacterioplankton communities as a function of pCO2 from laboratory experiments between 2012 and 2016. Biological and Chemical Oceanography Data Management Office (BCO-DMO). Dataset version 2013-11-21 [if applicable, indicate subset used]. doi:10.1575/1912/bco-dmo.665253 [access date]",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "publishingPrinciples": {
+    "@type": "DigitalDocument",
+    "@id": "http://creativecommons.org/licenses/by/4.0/",
+    "additionalType": "gdx:Protocol-License",
+    "name": "Dataset Usage License",
+    "url": "http://creativecommons.org/licenses/by/4.0/"
+  },
+  "temporalCoverage": "2012-09-20/2016-01-22",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-149.8727,-17.45 -64.6353,34.407",
+      "polygon": "-149.8727,-17.45 -149.8727,34.407 -64.6353,34.407 -64.6353,-17.45 -149.8727,-17.45"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "alternateName": "CRS",
+        "name": "Coordinate Reference System",
+        "value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      },
+      {
+        "@type": "PropertyValue",
+        "value": "POLYGON ((-149.8727 -17.45, -64.6353 -17.45, -64.6353 34.407, -149.8727 34.407, -149.8727 -17.45))",
+        "propertyID": "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "name": "Well-Known Text",
+        "alternateName": "WKT"
+      }
+    ]
+  },
+  "publisher": {
+    "@id": "https://adam.bco-dmo.org/affiliation/191",
+    "@type": "Organization",
+    "additionalType": "geolink:Organization",
+    "legalName": "Biological and Chemical Data Management Office",
+    "name": "BCO-DMO",
+    "identifier": "http://lod.bco-dmo.org/id/affiliation/191",
+    "url": "https://adam.bco-dmo.org/affiliation/191",
+    "sameAs": "http://www.re3data.org/repository/r3d100000012"
+  },
+  "provider": {
+    "@id": "https://adam.bco-dmo.org/affiliation/191"
+  },
+  "includedInDataCatalog": [
+    {
+      "@id": "http://www.bco-dmo.org/datasets"
+    }
+  ],
+  "isPartOf": [
+    {
+      "@type": "CreativeWork",
+      "additionalType": "earthcollab:Project",
+      "@id": "https://adam.bco-dmo.org/project/2284",
+      "name": "Will high CO2 conditions affect production, partitioning and fate of organic matter?",
+      "alternateName": "OA - Effects of High CO2"
+    }
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://adam.bco-dmo.org/dataset/472032/data/download",
+    "encodingFormat": "text/tab-separated-values",
+    "datePublished": "2016-12-05",
+    "inLanguage": "en-US"
+  },
+  "measurementTechnique": [
+    "Shimadzu TOC-V Analyzer",
+    "Flow Cytometer",
+    "Microscope-Fluorescence",
+    "Shimadzu TOC-L Analyzer"
+  ],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665785",
+      "value": "experiment",
+      "description": "Experiment identifier\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665785",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1759",
+        "value": "experiment id",
+        "description": "Experiment Id\n",
+        "url": "https://adam.bco-dmo.org/parameter/1759",
+        "unitText": "text"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665786",
+      "value": "site",
+      "description": "Site the water for the experiment came from\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665786",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1124",
+        "value": "site",
+        "description": "Sampling site identification.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1124",
+        "unitText": "dimensionless"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665787",
+      "value": "latitude",
+      "description": "Latitude where water samples were collected; north is positive.\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665787",
+      "unitText": "decimal degrees",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/730",
+        "value": "latitude",
+        "description": "latitude, in decimal degrees, North is positive, negative denotes South; Reported in some datasets as degrees, minutes\n",
+        "url": "https://adam.bco-dmo.org/parameter/730",
+        "unitText": "decimal degrees"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665788",
+      "value": "longitude",
+      "description": "Longitude where water samples were collected; west is negative.\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665788",
+      "unitText": "decimal degrees",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/731",
+        "value": "longitude",
+        "description": "longitude, in decimal degrees, East is positive, negative denotes West; Reported in some datsets as degrees, minutes\n",
+        "url": "https://adam.bco-dmo.org/parameter/731",
+        "unitText": "decimal degrees"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665789",
+      "value": "bottle_number",
+      "description": "Bottle identifier\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665789",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/757",
+        "value": "bottle ",
+        "description": " water bottle number, generally assigned to a position on a CTD rosette, identifies all samples drawn from a given bottle \n",
+        "url": "https://adam.bco-dmo.org/parameter/757"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665790",
+      "value": "doc_addition",
+      "description": "Dissolved organic carbon additions. See Aquisition Description section for an explaination of values.\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665790",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/489066",
+        "value": "treatment",
+        "description": "Experimental conditions applied to experimental units.  In comparative experiments, members of the complementary group, the control group, receive either no treatment or a standard treatment.\n",
+        "url": "https://adam.bco-dmo.org/parameter/489066",
+        "unitText": "unitless"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665791",
+      "value": "target_pCO2",
+      "description": "Target pCO2 level\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665791",
+      "unitText": "parts per million (ppm)",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1991",
+        "value": "pCO2",
+        "description": "Partial pressure of carbon dioxide {pCO2} in the water body by computation from pH and alkalinity.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1991",
+        "unitText": "various"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665792",
+      "value": "time_point",
+      "description": "Time point identifier in experiment\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665792",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/472026",
+        "value": "time_point",
+        "description": "Arbitrary time point of sampling in a sampling sequence (T0, T1,....Tn)\n",
+        "url": "https://adam.bco-dmo.org/parameter/472026",
+        "unitText": "dimensionless"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665793",
+      "value": "time_days",
+      "description": "Elapsed time since start of experiment in days\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665793",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1838",
+        "value": "time_elapsed",
+        "description": "Elapsed time. Typically found in CTD profile data. Units can be seconds, minutes, etc.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1838",
+        "unitText": "variable (see individual datasets)"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665794",
+      "value": "date",
+      "description": "Date of experiment in format YYYY-MM-DD\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665794",
+      "unitText": "unitless",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1070",
+        "value": "date",
+        "description": "date; generally reported in GMT as YYYYMMDD (year; month; day); also as MMDD (month; day); EqPac dates are local Hawaii time. ISO_Date format is YYYY-MM-DD (http://www.iso.org/iso/home/standards/iso8601.htm)\n",
+        "url": "https://adam.bco-dmo.org/parameter/1070",
+        "unitText": "YYYY-MM-DD (ISO_Date) or YYYYMMDD or MMDD"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665795",
+      "value": "bact_abun_x10e6_avg",
+      "description": "Bacterial abundance multiplied by 10^6\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665795",
+      "unitText": "cells per milliliter",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1973",
+        "value": "bacterial abundance",
+        "description": "Any enumeration (counts, abundance, concentration) of bacteria (Kingdom Monera so includes cyanobacteria) designated by means other than taxonomic names (e.g. total) in any body of fresh or salt water.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1973"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665796",
+      "value": "bact_abun_x10e6_stderr",
+      "description": "Standard error of bacterial abundance multiplied by 10^6\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665796",
+      "unitText": "cells per milliliter",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1973",
+        "value": "bacterial abundance",
+        "description": "Any enumeration (counts, abundance, concentration) of bacteria (Kingdom Monera so includes cyanobacteria) designated by means other than taxonomic names (e.g. total) in any body of fresh or salt water.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1973"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665797",
+      "value": "bact_abun_x10e6_stdev",
+      "description": "Standard deviation Bacterial abundance multiplied by 10^6\n",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665797",
+      "unitText": "cells per milliliter",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1973",
+        "value": "bacterial abundance",
+        "description": "Any enumeration (counts, abundance, concentration) of bacteria (Kingdom Monera so includes cyanobacteria) designated by means other than taxonomic names (e.g. total) in any body of fresh or salt water.\n",
+        "url": "https://adam.bco-dmo.org/parameter/1973"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665798",
+      "value": "toc_avg",
+      "description": "Total organic carbon",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665798",
+      "unitText": "micromoles per liter (uM)",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1211",
+        "value": "total organic Carbon",
+        "description": "total organic Carbon",
+        "url": "https://adam.bco-dmo.org/parameter/1211",
+        "unitText": "micromoles/liter"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665799",
+      "value": "toc_stderr",
+      "description": "Standard error of total organic carbon",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665799",
+      "unitText": "micromoles per liter (uM)",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1211",
+        "value": "total organic Carbon",
+        "description": "total organic Carbon",
+        "url": "https://adam.bco-dmo.org/parameter/1211",
+        "unitText": "micromoles/liter"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "@id": "https://adam.bco-dmo.org/dataset-parameter/665800",
+      "value": "toc_stdev",
+      "description": "Standard deviation of total organic carbon",
+      "url": "https://adam.bco-dmo.org/dataset-parameter/665800",
+      "unitText": "micromoles per liter (uM)",
+      "valueReference": {
+        "@type": "PropertyValue",
+        "@id": "https://adam.bco-dmo.org/parameter/1211",
+        "value": "total organic Carbon",
+        "description": "total organic Carbon",
+        "url": "https://adam.bco-dmo.org/parameter/1211",
+        "unitText": "micromoles/liter"
+      }
+    }
+  ]
+}
