@@ -12,7 +12,8 @@ resources [1] and [2]
 1. Tell P418 about it!
 
 For further information on the approach and the various types and properties being looked 
-for consult ref 1 and 2.  
+for consult ref 1 and 2.    There are some examples in ref 5 and always feel free to put an
+ issue in this repository with questions.  
 
 #### Tools
 JSON-LD is valid JSON, so standard developer tools that support JSON can be used.   For some specific JSON-LD and schema.org help though, there are some other resources.
@@ -55,9 +56,10 @@ following the format specified at ref 5.
 1. Google Job Search: https://careers.google.com/jobs 
 1. Google Scholar: https://scholar.google.com/ 
 1. Sitemap protocol https://www.sitemaps.org/protocol.html 
-    1. Sitemap examples http://149.165.168.129/sitemap.xml  and http://149.165.168.129/xsedesitemap.xml
-    1. Landing page with markup example http://149.165.168.129/doc/dataset/bcd15975-680c-47db-a062-ac0bb6e66816 
-    1. [Above landing page run through Google Structure Data Testing](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F149.165.168.129%2Fdoc%2Fdataset%2Fbcd15975-680c-47db-a062-ac0bb6e66816)  Note only focus on detected *dataset* as there are errors in other JSON-LD in this page at this time. 
+    1. Sitemap examples http://opencoredata.org/sitemap.xml 
+    1. Sitemap examples BCO-DMO https://www.bco-dmo.org/sitemap.xml (an example of splitting across many)
+    1. Landing page with markup example http://opencoredata.org/doc/dataset/bcd15975-680c-47db-a062-ac0bb6e66816 
+    1. [Above landing page run through Google Structure Data Testing](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2Fopencoredata.org%2Fdoc%2Fdataset%2Fbcd15975-680c-47db-a062-ac0bb6e66816)  Note only focus on detected *dataset* as there are errors in other JSON-LD in this page at this time. 
 1. Schema.org and type dataset: http://schema.org  http://schema.org/DataSet
 
 
