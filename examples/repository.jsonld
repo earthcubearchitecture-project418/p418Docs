@@ -7,7 +7,7 @@
     "@id": "http://www.bco-dmo.org",
     "additionalType": "gdx:ResearchRepositoryService",
     "name": "Biological and Chemical Data Management Office Data Service",
-    "url": "http://wwww.bco-dmo.org",
+    "url": "http://www.bco-dmo.org",
     "category": ["Biological Oceanography", "Chemical Oceanography"],
     "description": "The BCO-DMO resource catalog offers free and open access to publicly funded research products whose field of study are biological and chemical oceanography.",
     "sameAs": "http://www.re3data.org/repository/r3d100000012",
@@ -20,7 +20,6 @@
     "provider": {
         "@type": "Organization",
         "@id": "http://www.bco-dmo.org/affiliation/191",
-        "identifier": "http://lod.bco-dmo.org/id/affiliation/191",
         "legalName": "Biological and Chemical Data Management Office",
         "name": "BCO-DMO",
         "url": "http://www.bco-dmo.org",
@@ -87,120 +86,195 @@
                 "@id": "http://www.bco-dmo.org/terms-use",
                 "additionalType": "gdx:Protocol-TermsOfUse",
                 "name": "Terms of Use",
-                "url": "http://www.bco-dmo.org/terms-use"
+                "url": "http://www.bco-dmo.org/terms-use",
+                "fileFormat": "text/html"
             },
             {
                 "@type": "DigitalDocument",
                 "@id": "http://www.bco-dmo.org/how-get-started",
                 "additionalType": "gdx:Protocol-ResourceSubmissionPolicy",
                 "name": "How to Get Started Contributing Data",
-                "url": "http://www.bco-dmo.org/how-get-started"
+                "url": "http://www.bco-dmo.org/how-get-started",
+                "fileFormat": "text/html"
             }
         ]
     },
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "additionalType": "gdx:ResearchResourceCatalog",
         "name": "BCO-DMO Resource Catalog",
-        "itemListElement": [{
-            "@type": "DataCatalog",
-            "@id": "http://www.bco-dmo.org/datasets",
-            "name": "BCO-DMO Data Catalog",
-            "audience": {
-                "@type": "Audience",
-                "audienceType": "public",
-                "name": "General Public"
+        "itemListElement": [
+            {
+                "@type": "DataCatalog",
+                "@id": "http://www.bco-dmo.org/datasets",
+                "name": "BCO-DMO Data Catalog",
+                "publishingPrinciples": [
+                    {
+                        "@type": "DigitalDocument",
+                        "@id": "http://www.bco-dmo.org/terms-use",
+                        "additionalType": "gdx:Protocol-TermsOfUse",
+                        "name": "Terms of Use",
+                        "url": "http://www.bco-dmo.org/terms-use",
+                        "fileFormat": "text/html"
+                    },
+                    {
+                        "@type": "DigitalDocument",
+                        "additionalType": "gdx:Protocol-Access",
+                        "name": "Accessing Data",
+                        "url": "http://www.bco-dmo.org/data",
+                        "fileFormat": "text/html"
+                    }
+                ],
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "public",
+                    "name": "General Public"
+                }
+            },
+            {
+                "@type": "WebAPI",
+                "@id": "http://api.bco-dmo.org",
+                "name": "Data Access API",
+                "publishingPrinciples": [
+                    {
+                        "@type": "DigitalDocument",
+                        "@id": "http://www.bco-dmo.org/terms-use",
+                        "additionalType": "gdx:Protocol-TermsOfUse",
+                        "name": "Terms of Use",
+                        "url": "http://www.bco-dmo.org/terms-use",
+                        "fileFormat": "text/html"
+                    },
+                    {
+                        "@type": "DigitalDocument",
+                        "additionalType": "gdx:Protocol-Access",
+                        "name": "Accessing Data",
+                        "url": "http://www.bco-dmo.org/data",
+                        "fileFormat": "text/html"
+                    }
+                ],
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "public",
+                    "name": "General Public"
+                }
             }
-        }]
+        ]
     },
     "availableChannel": [
         {
             "@type": "ServiceChannel",
-            "@id": "http://www.bco-dmo.org/search",
-            "additionalType": "gdx:SearchService",
-            "name": "Website Search",
             "serviceUrl": "http://www.bco-dmo.org/search",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "contentType": "text/html",
-                    "url": "http://www.bco-dmo.org/search",
-                    "urlTemplate": "http://www.bco-dmo.org/search?keywords={query_string}",
-                    "description": "Search the BCO-DMO catalog",
-                    "httpMethod": "GET"
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://www.bco-dmo.org/search",
+                "additionalType": "gdx:SearchService",
+                "name": "BCO-DMO Website Search",
+                "description": "Search for webpages, datasets, people, projects, funding awards, deployments, instrumentation and measurements",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "http://www.bco-dmo.org/search?keywords={query_string}",
+                    "query-input": {
+                        "@type": "PropertyValueSpecification",
+                        "valueRequired": true,
+                        "valueName": "query_string"
+                    }
                 }
             }
         },
         {
             "@type": "ServiceChannel",
-            "@id": "http://lod.bco-dmo.org/sparql",
-            "additionalType": "gdx:SearchService",
-            "name": "SPARQL Endpoint",
             "serviceUrl": "http://lod.bco-dmo.org/sparql",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "contentType": "application/sparql-query",
-                    "url": "http://lod.bco-dmo.org/sparql",
-                    "urlTemplate": "http://lod.bco-dmo.org/sparql?default-graph-uri={graph_iri}&query={query_string}&output={format}&timeout={timeout_sec}&debug={on_or_off}",
-                    "description": "Search BCO-DMO RDF through its SPARQL Endpoint",
-                    "httpMethod": ["GET", "POST"]
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://lod.bco-dmo.org/sparql",
+                "additionalType": "gdx:SearchService",
+                "name": "SPARQL Endpoint",
+                "description": "Investigate BCO-DMO structured data for discovering datasets, people, projects, funding awards, deployments, instrumentation and measurements, their properties and relationships to internal and external resources",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "contentType": "application/sparql-query",
+                        "urlTemplate": "http://lod.bco-dmo.org/sparql?default-graph-uri={graph_iri}&query={sparql_query}&output={format}&timeout={timeout_sec}&debug={on_or_off}",
+                        "description": "Search BCO-DMO RDF through its SPARQL Endpoint",
+                        "httpMethod": ["GET", "POST"]
+                    },
+                    "query-input": {
+                        "@type": "PropertyValueSpecification",
+                        "valueRequired": true,
+                        "valueName": "sparql_query"
+                    }
                 }
             }
         },
         {
             "@type": "ServiceChannel",
-            "@id": "http://www.bco-dmo.org/services/oai",
-            "additionalType": "gdx:SearchService",
-            "name": "OAI-PMH Endpoint",
-            "serviceUrl": "http://www.bco-dmo.org/services/oai",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "contentType": "application/xml",
-                    "url": "http://www.bco-dmo.org/services/oai",
-                    "urlTemplate": "http://www.bco-dmo.org/services/oai?verb={oai_verb}&metadataPrefix={metadata_format}",
-                    "description": "Search BCO-DMO Datasets through its OAI-PMH Endpoint",
-                    "httpMethod": "GET"
+            "serviceUrl": "https://www.bco-dmo.org/sitemap.xml",
+            "providesService": {
+                "@type": "Service",
+                "@id": "https://www.bco-dmo.org/sitemap.xml",
+                "additionalType": "gdx:SyndicationService",
+                "name": "Sitemap XML",
+                "description": "A Sitemap XML providing access to all of the resources for harvesting",
+                "potentialAction": {
+                    "@type": "ConsumeAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "additionalType": "gdx:SitemapXML",
+                        "url": "https://www.bco-dmo.org/sitemap.xml",
+                        "urlTemplate": "https://www.bco-dmo.org/sitemap.xml?page={page}"
+                    },
+                    "query-input": {
+                        "@type": "PropertyValueSpecification",
+                        "description": "A page number specifying the desired page of the sitemap"
+                        "valueRequired": false,
+                        "valueName": "page",
+                        "valuePattern": "^[1-9][0-9]*$",
+                        "minValue": 1
+                    }
                 }
             }
         },
         {
             "@type": "ServiceChannel",
-            "@id": "http://www.bco-dmo.org/rss/datasets/recent.xml",
-            "additionalType": "gdx:SyndicationService",
             "availableLanguage": "en-US",
-            "name": "Recently Added Datasets",
-            "description": "List of recently added datasets to the BCO-DMO catalog",
-            "serviceUrl": "http://www.bco-dmo.org/rss/datasets/recent.xml"
+            "serviceUrl": "http://www.bco-dmo.org/rss/datasets/recent.xml",
+            "providesService": {
+                "@type": "Service",
+                "additionalType": "gdx:SyndicationService",
+                "@id": "http://www.bco-dmo.org/rss/datasets/recent.xml",
+                "name": "Recently Added Datasets",
+                "description": "List of recently added datasets to the BCO-DMO catalog",
+                "potentialAction": {
+                    "@type": "ConsumeAction",
+                    "target": "http://www.bco-dmo.org/rss/datasets/recent.xml"
+                }
         },
         {
             "@type": "ServiceChannel",
-            "@id": "http://www.bco-dmo.org/how-get-started",
-            "additionalType": "gdx:SubmissionService",
             "availableLanguage": "en-US",
-            "name": "Submit Data to BCO-DMO",
             "serviceUrl": "http://www.bco-dmo.org/how-get-started",
-            "description": "Submit data to BCO-DMO"
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://www.bco-dmo.org/how-get-started",
+                "additionalType": "gdx:SubmissionService",
+                "name": "Submit Data to BCO-DMO",
+                "description": "Submit data to BCO-DMO",
+                "potentialAction": {
+                    "@type": "CreateAction",
+                    "target": "http://www.bco-dmo.org/how-get-started"
+                }
+            }
         },
         {
             "@type": "ServiceChannel",
-            "@id": "http://www.bco-dmo.org/faq-page",
             "availableLanguage": "en-US",
-            "name": "FAQs",
             "serviceUrl": "http://www.bco-dmo.org/faq-page",
-            "description": "List of frequently asked questions about BCO-DMO"
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://www.bco-dmo.org/faq-page",
+                "name": "FAQs",
+                "description": "List of frequently asked questions about BCO-DMO"
+            }
         }
-    ],
-    "subjectOf": {
-        "@type": "DigitalDocument",
-        "@id": "https://www.bco-dmo.org/sitemap.xml",
-        "additionalType": "gdx:SitemapXML",
-        "name": "sitemap.xml",
-        "url": "https://www.bco-dmo.org/sitemap.xml",
-        "description": "Sitemap.xml file that list datasets and other resources available from the BCO-DMO data service"
-    }
+    ]
 }
