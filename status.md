@@ -1,16 +1,9 @@
 ### A rolling status update document
-#### Revised Nov 8th 2017 
+#### Revised Dec 7th 2017 
 
-### Working timeline
-* [Short term timeline](./assets/shortTermTimeline.pdf)
-
-A short term timeline has been developed showing some of the next steps.  The main goals
-shown on this are to:
-
-* finish the vocabulary to enable facility and data set description in JSON-LD
-* get the indexers (text, spatial, graph) online (temporal to follow)
-* APIs for use by notebooks and other UIs
-* facility publishing engagement 
+### status update
+An initial index of 3 source (Linked Earth, BCO-DMO and Open Core Data) has been done.  The 
+test interface at geodex.org will represent this soon.  
 
 
 ### Functional Goals
@@ -48,22 +41,22 @@ of the items in the *Outline of activities*
      - [ ] DataCite API
 1. Crawling activity
     - [x] Update crawling code to simpler sitemap approach
-    - [ ] Implement JSON-LD framing code 
-        - [ ] for spatial (See Footnote 1)
+    - [-] Implement JSON-LD framing code 
+        - [x] for spatial (See Footnote 1)
         - [ ] for download ref (location and type) (See Footnote 2)
         - [ ] for organization info (See Footnote 3) 
 1. Indexing activity: A simple monolithic crawl / indexing structure is currently pseudo coded for now.  A representation of this is seen in Footnote 4.  
-    - [ ] Resolution of GRPC or microservice pattern for crawler to index connections.  This 
-    may be a bit different given the sitemap pattern making concurrency easier to implement. 
     - [x] Bleve indexer update  prototype
     - [x] JSON-LD indexer blank node resolution issue
     - [x] RDF indexer    (approach identified, was held up by blocking event on blank nodes..  resolved now)
     - [x] Spatial indexer  (geohash approach identified and selected)
     - [ ] Temporal indexer  (Possible back-ends include Timescale (+1) or Prometheus...   internal data model not set yet though)
+    - [ ] Index sharing via the web site (geodex.org)
+    - [ ] update the publishing tools page and link at geodex.org
 1. Interface task list:  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
     - [ ] Service call for text index search (RESTful)  (See Footnote 5)
-    - [ ] Web based UI (can be more than one) (See Footnote 6)
+    - [x] Web based UI (can be more than one) (See Footnote 6)
     - [ ] Notebook based UI (needs services first) [placeholder](https://github.com/earthcubearchitecture-project418/p418Notebooks/blob/master/Notebook1.ipynb)
     - [ ] Web component development for easy UI development  (Downstream activity)
 
