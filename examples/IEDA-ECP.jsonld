@@ -4,18 +4,18 @@
         "gdx": "https://geodex.org/voc/"
     },
     "@type": "Service",
-    "@id": "http://earthchem.org/library",
+    "@id": "http://www.earthchem.org/portal",
     "additionalType": "gdx:ResearchRepositoryService",
-    "name": "EarthChem Library",
-    "url": "http://www.earthchem.org/library",
+    "name": "EarthChem Portal",
+    "url": "http://www.earthchem.org/portal",
     "category": ["Geochemistry"],
-    "description": "The EarthChem Library is a data repository that archives, publishes and makes accessible data and other digital content from geoscience research (analytical data, data syntheses, models, technical reports, etc.)",
-    "sameAs": "https://www.re3data.org/repository/r3d100011538",
+    "description": "The EarthChem Portal offers a 'one-stop-shop' for geochemistry data of the solid earth with access to complete data from multiple data systems operated by different providers. The portal returns integrated search results from the federated databases PetDB (IEDA), SedDB (IEDA), GEOROC (MPI Mainz, Germany), NavDat (IEDA), USGS, and DARWIN (JAMSTEC, Japan). The portal features mapping and visualization tools.",
+    "sameAs": "https://www.re3data.org/repository/r3d100010412",
     "identifier": {
         "@type": "PropertyValue",
         "propertyID": "http://purl.org/spar/datacite/doi",
-        "value": "10.17616/R3V644",
-        "url": "http://doi.org/10.17616/R3V644"
+        "value": "10.17616/R3DK6N",
+        "url": "http://doi.org/10.17616/R3DK6N"
     },
     "logo": {
         "@type": "ImageObject",
@@ -29,7 +29,7 @@
         "description": "The IEDA data facility\u2019s mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
         "logo": {
             "@type": "ImageObject",
-            "url": "http://www.bco-dmo.org/files/bcodmo/images/bco-dmo-words-BLUE.jpg"
+            "url": ""
         },
         "contactPoint": {
             "@type": "ContactPoint",
@@ -73,6 +73,14 @@
             }
         },
         "publishingPrinciples": [
+        {
+    "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "@type": "DigitalDocument",
+    "additionalType": "gdx:Protocol-License",
+    "name": "Dataset Usage License",
+    "description":"Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  },
             {
                 "@type": "DigitalDocument",
                 "@id": "https://www.iedadata.org/help/data-publication/",
@@ -93,76 +101,92 @@
     },
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "EarthChem Library Catalog",
-        "itemListElement": [
-            {
-                "@type": "DataCatalog",
-                "@id": "http://www.earthchem.org/library/search",
-                "name": "EarthChem Library Catalog",
-                "publishingPrinciples": [
-                    {
-                        "@type": "DigitalDocument",
-                        "@id": "http://www.earthchem.org/library/disclaimer",
-                        "additionalType": "gdx:Protocol-TermsOfUse",
-                        "name": "Terms of Use",
-                        "url": "http://www.earthchem.org/library/disclaimer",
-                        "fileFormat": "text/html"
-                    }
-                ],
-                "audience": {
-                    "@type": "Audience",
-                    "audienceType": "public",
-                    "name": "General Public"
-                }
+        "name": "EarthChem Database",
+        "itemListElement": [{
+            "@type": "DataCatalog",
+            "@id": "http://ecp.iedadata.org/",
+            "name": "EarthChem Portal Database",
+            "description": "This Portal aggregates data from Petdb, NAVDAT, GeoRock and Ganseki. Results can be downloaded in Excel spreadsheets or as csv text files.",
+            "publishingPrinciples": [{
+                "@type": "DigitalDocument",
+                "@id": "http://www.earthchem.org/library/disclaimer",
+                "additionalType": "gdx:Protocol-TermsOfUse",
+                "name": "Terms of Use",
+                "url": "http://www.earthchem.org/library/disclaimer",
+                "fileFormat": "text/html"
+            }],
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "public",
+                "name": "General Public"
             }
-        ]
+        }]
     },
     "availableChannel": [
         {
             "@type": "ServiceChannel",
-            "serviceUrl": "http://www.earthchem.org/library/search",
+            "serviceUrl": "http://ecp.iedadata.org/",
             "providesService": {
                 "@type": "Service",
-                "@id": "http://www.earthchem.org/library/search",
+                "@id": "http://ecp.iedadata.org/",
                 "additionalType": "gdx:SearchService",
-                "name": "EarthChem Library Search",
-                "description": "Search for datasets in the EarthChem Library repository",
-                                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "http://www.earthchem.org/library/search"
-                }
-            }
-        },
-
-        {
-            "@type": "ServiceChannel",
-            "availableLanguage": "en-US",
-            "serviceUrl": "http://www.earthchem.org/library/submit",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://www.earthchem.org/library/submit",
-                "additionalType": "gdx:SubmissionService",
-                "name": "Submit Data to EarthChem Library",
-                "description": "Web application to support submitting a dataset to the EarthChem Library. Requires a Geopass account (free registration). Datasets will be registered with a DOI after acceptance for accession to repository.",
+                "name": "EarthChem Geochemical Data Search",
+                "description": "Link to web page enabling users to construct and submit queries to the EarthChem Database, review results, and download data in Excel or CSV files.",
                 "potentialAction": {
-                    "@type": "CreateAction",
-                    "target": "http://www.earthchem.org/library/submit"
+                    "@type": "SearchAction",
+                    "target": "http://ecp.iedadata.org/",
+                    "httpMethod": "GET"
                 }
             }
         },
         {
             "@type": "ServiceChannel",
             "availableLanguage": "en-US",
-            "serviceUrl": "http://www.earthchem.org/library/browse",
+            "serviceUrl": "http://ecp.iedadata.org/wfs/ows",
             "providesService": {
                 "@type": "Service",
-                "@id": "http://www.earthchem.org/library/browse",
-                "name": "Browse all EarthChem Library content",
-                "description": "Listing of all library repository items for browsing via a web page",
-                 "potentialAction": {
-                    "@type": "ReadAction",
-                    "target": "http://www.earthchem.org/library/browse"
-                }
+                "@id": "http://ecp.iedadata.org/wfs/ows?service=wfs&version=1.0.0&request=GetCapabilities",
+                "additionalType": "gdx:SearchService",
+                "name": "OGC Web Feature Service for EarthChem Data",
+                "description": "Link for GetCapabilities document to access data from the EarthChem database. The service defines feature types for samples, major elements, trace elements, isotopes, noble gases, rare earth elements, stable isotopes, volatiles, and whole rock major, trace and isotope data aggregated.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "additionalType": "OGC WFS",
+                    "target": "http://ecp.iedadata.org/wfs/ows?service=wfs&version=1.0.0&request=GetCapabilities",
+                    "more": "need to describe feature types, provide WFS templates"
+                },
+                "mainEntityOfPage": [{
+                    "@type": "Web Site",
+                    "fileformat": "HTML",
+                    "name": "About EarthChem WFS Service",
+                    "keywords": "Earthchem, geochemistry",
+                    "description": "Web site with documentation on the EarthChem system",
+                    "url": "http://ecp.iedadata.org/webservices"
+                }]
+            }
+        },
+        {
+            "@type": "ServiceChannel",
+            "availableLanguage": "en-US",
+            "serviceUrl": "http://ecp.iedadata.org/restsearchservice",
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://ecp.iedadata.org/restsearchservice",
+                "name": "EarthChem REST web service",
+                "description": "RESTful web service for accessing EarthChem database",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "http://ecp.iedadata.org/restsearchservice"
+                },
+                "mainEntityOfPage": [{
+                    "@type": "Web Site",
+                    "fileformat": "HTML",
+                    "name": "EarthChem REST Server Documentation",
+                    "keywords": "Earthchem, geochemistry",
+                    "description": "Web site with documentation for the EarthChem REST services",
+                    "url": "http://ecp.iedadata.org/rest_search_documentation/"
+                }]
+                
             }
         }
     ]

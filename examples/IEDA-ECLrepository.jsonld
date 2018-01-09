@@ -29,7 +29,7 @@
         "description": "The IEDA data facility\u2019s mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
         "logo": {
             "@type": "ImageObject",
-            "url": "http://www.bco-dmo.org/files/bcodmo/images/bco-dmo-words-BLUE.jpg"
+            "url": ""
         },
         "contactPoint": {
             "@type": "ContactPoint",
