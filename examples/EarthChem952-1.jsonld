@@ -1,0 +1,173 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "datacite": "http://purl.org/spar/datacite/",
+    "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+    "geolink": "http://schema.geolink.org/1.0/base/main#",
+    "vivo": "http://vivoweb.org/ontology/core#",
+    "dcat":"http://www.w3.org/ns/dcat#"
+  },
+  "@id": "doi:10.1594/IEDA/100599",
+  "@type": "Dataset",
+  "additionalType": [
+    "geolink:Dataset",
+    "vivo:Dataset"
+  ],
+  "alternateName": "Plagioclase data from the Hicks Butte Inlier, central Cascades, Washington, USA",
+  "citation": "MacDonald, James H. (2016): Plagioclase data from the Hicks Butte Inlier, central Cascades, Washington, USA. EarthChem Library. http://dx.doi.org/10.1594/IEDA/100599",
+  "creator": [
+    {
+      "@id": "https://orcid.org/0000-0001-7576-5575",
+      "@type": "Person",
+      "additionalType": "geolink:Person",
+      "name": "MacDonald, James H."
+      }
+  ],
+  "datePublished": "2016-06-15",
+  "description": "In this data set is plagioclase and amphibole data that was part of Thompson et al. (2015) Geological Society of America abstract. This data was generated at the Florida Center for Analytical Electron Microscopy, and was funded by NSF grant DUE 1323354.",
+  "distribution": {
+    "@type": "DataDownload",
+    "additionalType": ["dcat:distribution"],
+    "dcat:accessURL": "http://grl.geoinfogeochem.org/downloadFeedback.php?id=952",
+    "datePublished": "2016-06-15",
+    "thumbnailUrl":"null",
+    "encodingFormat": "application/vnd.ms-excel",
+    "inLanguage": "en-US"
+  },
+  "identifier": [
+    {
+      "@id": "doi:10.1594/IEDA/100599",
+      "@type": "PropertyValue",
+      "additionalType": [
+        "geolink:Identifier",
+        "datacite:Identifier"
+      ],
+      "propertyID": "datacite:doi",
+      "url": "http://dx.doi.org/10.1594/IEDA/100599",
+      "value": "10.1594/IEDA/100599"
+    }
+  ],
+  "includedInDataCatalog": { //expects DataCatalog
+    "@type":"DataCatalog",
+    "name":"Earthchem Library",
+    "url": "http://www.earthchem.org/library/search"
+  },
+  "isPartOf": { //project context
+    "@id": "https://nsf.gov/awardsearch/showAward?AWD_ID=1323354",
+    "@type": "CreativeWork",
+    "additionalType": "earthcollab:Project",
+    "description": "This collaborative project is examining the remote operation of analytical instruments, specifically a scanning-electron microscope and electron microprobe analyzer housed at Florida International University (FIU), to facilitate inquiry-based approaches to learning in undergraduate geoscience courses. The effectiveness of remote instrument use is being assessed across different course levels and audiences at four diverse institutions: FIU, Valencia Community College, Florida Gulf Coast University, and the University of South Florida. Faculty at each institution are adapting instrument use to their courses and students, and using common methods to assess learning gains and changes in students' attitudes along a novice-to-expert trajectory. Instrument use and learning assessment at the four partnering institutions is being supplemented by national-level outreach to engage further partners, using hands-on workshops and follow-on individual training and consultation for faculty who commit to pilot use in their own courses. \n The intellectual merit of the project lies in its well-formulated plan to leverage fixed-location, high-end analytical instruments to enable authentic research and inquiry within the undergraduate curriculum at remote institutions. The embedded educational research addresses important questions of a) how much and what type(s) of remote instrument-aided inquiry enable targeted student-learning outcomes, b) what factors determine effectiveness as institution type, curricular level, and student audiences vary, and c) what challenges exist for widespread propagation of the approach and how might these be overcome. Broader impacts of the project include a) the production of insights and practices that promote remote use of research-grade analytical instrumentation at multiple levels of the undergraduate curriculum, providing a model that could be used at other research centers to enable heretofore inaccessible analytical capabilities at a wide range of undergraduate institutions, b) engagement of a diverse range of students (from seniors in majors' classes to first-year non-majors in introductory classes) and institutions (from research universities to community colleges) in authentic research, a high-impact practice for retaining students in STEM disciplines, and c) professional development for faculty at the partnering institutions and beyond, as well as for a postdoctoral scholar and graduate student engaged in discipline-based educational research.",
+    "name": "Collaborative Project: Expanding the Use of Remote Electron Microscopy in the Classroom to Transform Undergraduate Geoscience Education",
+    "url": "https://nsf.gov/awardsearch/showAward?AWD_ID=1323354"
+  },
+  "keywords": "Hicks Butte complex, feldspar, Jurassic, plagioclase, dacite, tonalite, rhyolite",
+  "license": "http://creativecommons.org/licenses/by-sa-nc/3.0/",
+  "measurementTechnique": ["Electron Microprobe"],
+  "name": "Plagioclase data from the Hicks Butte Inlier, central Cascades, Washington, USA",
+  "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+  },
+  "publisher": {
+    "@type": "Organization",
+         "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+  "publishingPrinciples": {
+    "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "@type": "DigitalDocument",
+    "additionalType": "gdx:Protocol-License",
+    "name": "Dataset Usage License",
+    "description":"Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  },
+  "recordedAt": "missing",
+  "spatialCoverage": {
+    "@type": "Place",
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "alternateName": "CRS",
+        "name": "Coordinate Reference System",
+        "value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      }
+    ],
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-149.8727,-17.45 -64.6353,34.407",
+      "polygon": "-149.8727,-17.45 -149.8727,34.407 -64.6353,34.407 -64.6353,-17.45 -149.8727,-17.45"
+    },
+    "subjectOf": {
+      "@type": "CreativeWork",
+      "fileFormat": "application/vnd.geo+json",
+      "text": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[\"-64.635300000000\",\"34.407000000000\"],[\"-64.635300000000\",\"-17.450000000000\"],[\"-149.872700000000\",\"-17.450000000000\"],[\"-149.872700000000\",\"34.407000000000\"],[\"-64.635300000000\",\"34.407000000000\"]]]}}"
+    }
+  },
+  "variableMeasured": [
+    {
+      "@id": "https://www.bco-dmo.org/dataset-parameter/665785",
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "description": "place holder",
+      "unitText": "unitless",
+      "url": "",
+      "value": "",
+      "valueReference": {
+        "@id": "...",
+        "@type": "PropertyValue",
+        "description": "...",
+        "unitText": "text",
+        "url": "...",
+        "value": ".."
+      }
+    } 
+  ]
+}
+}
