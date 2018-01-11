@@ -47,12 +47,12 @@
       "value": "10.1594/IEDA/100599"
     }
   ],
-  "includedInDataCatalog": { //expects DataCatalog
+  "includedInDataCatalog": { 
     "@type":"DataCatalog",
     "name":"Earthchem Library",
     "url": "http://www.earthchem.org/library/search"
   },
-  "isPartOf": { //project context
+  "isPartOf": { 
     "@id": "https://nsf.gov/awardsearch/showAward?AWD_ID=1323354",
     "@type": "CreativeWork",
     "additionalType": "earthcollab:Project",
@@ -127,8 +127,8 @@
     "name": "Dataset Usage License",
     "description":"Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
     "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  }
   },
-  "recordedAt": "missing",
   "spatialCoverage": {
     "@type": "Place",
     "additionalProperty": [
@@ -143,11 +143,6 @@
       "@type": "GeoShape",
       "box": "-149.8727,-17.45 -64.6353,34.407",
       "polygon": "-149.8727,-17.45 -149.8727,34.407 -64.6353,34.407 -64.6353,-17.45 -149.8727,-17.45"
-    },
-    "subjectOf": {
-      "@type": "CreativeWork",
-      "fileFormat": "application/vnd.geo+json",
-      "text": "{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[\"-64.635300000000\",\"34.407000000000\"],[\"-64.635300000000\",\"-17.450000000000\"],[\"-149.872700000000\",\"-17.450000000000\"],[\"-149.872700000000\",\"34.407000000000\"],[\"-64.635300000000\",\"34.407000000000\"]]]}}"
     }
   },
   "variableMeasured": [
@@ -169,5 +164,4 @@
       }
     } 
   ]
-}
 }
