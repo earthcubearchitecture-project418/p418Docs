@@ -1,10 +1,18 @@
 ### A rolling status update document
-#### Revised Dec 7th 2017 
+#### Revised January 9th 2018
 
 ### status update
-An initial index of 3 source (Linked Earth, BCO-DMO and Open Core Data) has been done.  The 
-test interface at geodex.org will represent this soon.  
+An initial index of 3 source (Linked Earth, BCO-DMO and Open Core Data) has been done. A fourth (Neotoma) 
+Is ready for re-indexing but need a small update to address a parsing issue. 
+The test interface at geodex.org will represent this soon.  
 
+Next sources for contact
+* CSDCO https://csdco.umn.edu/ 
+* CHORDS  http://portal.chordsrt.com/data 
+* Open Topography  http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.072017.26911.1 
+* BALTO  https://earthcube.org/group/brokered-alignment-long-tail-observations-balto 
+* UNAVCO  http://www.unavco.org/data/doi/doi:10.7283/T5D798JV 
+* CHUASE https://www.cuahsi.org/data-models/publication/
 
 ### Functional Goals
 The following block quote items represent the next set of functional 
