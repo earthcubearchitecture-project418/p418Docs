@@ -1,0 +1,110 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.2314/GBV:1010756656",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "Qualifizierung innovativer Extinktionsphotometrie : Verbundprojekt: Innovative Extinktionsphotometrie zur Charakterisierung eines Mehrkomponenten-Aerosols und zur Feuchtemessung (IN-EX) : Abschlussbericht zum Teilprojekt A",
+    "alternateName": "Qualification of innovative extinction photometry (sub-project A of the joint-project \"Innovative extinction photometry for the characterisation of multicomponent-aerosol and humidity measurement (IN-EX\"))",
+    "citation": "Krupa, Björn Alexander, Technische Hochschule Aachen, Lehrstuhl für Reaktorsicherheit und -technik, Allelein, Hans-Josef (2017), Qualification of innovative extinction photometry (sub-project A of the joint-project \"Innovative extinction photometry for the characterisation of multicomponent-aerosol and humidity measurement (IN-EX\")). [Lehrstuhl für Reaktorsicherheit und -technik an der RWTH Aachen]. doi:10.2314/GBV:1010756656",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Krupa, Björn Alexander"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Technische Hochschule Aachen, Lehrstuhl für Reaktorsicherheit und -technik"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Allelein, Hans-Josef"
+        }
+    ],
+    "datePublished": "2017",
+    "version": "1.0",
+    "inLanguage": "de",
+    "description": "",
+    "distribution": [{
+        "@type": "DataDownload",
+        "additionalType": "dcat:distribution",
+        "name": "DOI landing page",
+        "dcat:accessURL": "http://dx.doi.org/10.2314/GBV:1010756656",
+        "url": "http://dx.doi.org/10.2314/GBV:1010756656",
+        "encodingFormat": "application/pdf"
+    }],
+    "identifier": [
+        {
+            "@id": " doi:10.2314/GBV:1010756656",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "datacite:doi",
+            "url": "http://dx.doi.org/10.2314/GBV:1010756656",
+            "value": "10.2314/GBV:1010756656"
+        },
+        {
+            "@id": "GBV:1010756656",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "firstid",
+            "value": "GBV:1010756656"
+        },
+        {
+            "@id": "01130925",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "contract",
+            "value": "01130925"
+        },
+        {
+            "@id": "1010756656",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "ppn",
+            "value": "1010756656"
+        },
+        {
+            "@id": "TIBKAT:1010756656",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "ftx-id",
+            "value": "TIBKAT:1010756656"
+        }
+    ],
+    "keywords": ["Engineering"],
+    "provider": {
+        "@type": "Organization",
+        "name": "[Lehrstuhl für Reaktorsicherheit und -technik an der RWTH Aachen]"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "[Lehrstuhl für Reaktorsicherheit und -technik an der RWTH Aachen]"
+    }
+}

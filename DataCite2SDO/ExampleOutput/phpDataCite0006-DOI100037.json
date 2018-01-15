@@ -1,0 +1,607 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.1594/IEDA/100037",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "LauBasin_TUIM05MV_Mottl",
+    "citation": "Michael J. Mottl, Peter Michael, Jeffrey Seewald, Eoghan Reeves, Chen-Feng You, Thomas Pichler, Jessica Sharkey, Lui-Hueng Chan, Margaret K. Tivey, Giora Proskurowski, Geoffrey C. Wheat (2010), LauBasin_TUIM05MV_Mottl. Interdisciplinary Earth Data Alliance (IEDA). doi:10.1594/IEDA/100037",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "@id": "https://www.scopus.com/authid/detail.uri?authorId=7004195161",
+            "name": "Michael J. Mottl",
+            "givenName": "Michael",
+            "familyName": "Mottl"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "@id": "http://orcid.org/0000-0003-2829-9502",
+            "name": "Peter Michael",
+            "givenName": "Peter",
+            "familyName": "Michael"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Jeffrey Seewald",
+            "givenName": "Jeffrey",
+            "familyName": "Seewald"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Eoghan Reeves",
+            "givenName": "Eoghan",
+            "familyName": "Reeves"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Chen-Feng You",
+            "givenName": "Chen-Feng",
+            "familyName": "You"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Thomas Pichler",
+            "givenName": "Thomas",
+            "familyName": "Pichler"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Jessica Sharkey",
+            "givenName": "Jessica",
+            "familyName": "Sharkey"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "@id": "https://www.scopus.com/authid/detail.uri?authorId=7403540481",
+            "name": "Lui-Hueng Chan",
+            "givenName": "Lui-Hueng",
+            "familyName": "Chan"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Margaret K. Tivey",
+            "givenName": "Margaret",
+            "familyName": "Tivey"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Giora Proskurowski",
+            "givenName": "Giora",
+            "familyName": "Proskurowski"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Geoffrey C. Wheat",
+            "givenName": "Geoffrey",
+            "familyName": "Wheat"
+        }
+    ],
+    "datePublished": "2010",
+    "description": "Abstract: Collection of hydrothermal vent fluid chemistry data from  the Eastern Lau Spreading Center. This file is just one part of a much larger effort (VentDB) to make available to the scientific community as much hydrothermal ridge vent chemistry data as possible (for a list of all the VentDB related data collections available, search the EarthChem Library for the term \u201cVentDB\u201d). For more information about this compilation, please see \"Explanatory Notes and Master Chemical Item Spreadsheet for the VentDB Data Collections housed in the EarthChem Library\" (M. Mottl), available at www.earthchem.org/library.;       Other Description: Mottl, M.J. et al., (2011), Chemistry of hot springs along the Eastern Lau Spreading Center, Geochimica et Cosmochimica Acta, 75(4), 1013-1038.",
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "DOI landing page",
+            "dcat:accessURL": "http://dx.doi.org/10.1594/IEDA/100037",
+            "url": "http://dx.doi.org/10.1594/IEDA/100037",
+            "encodingFormat": "application/vnd.ms-excel"
+        },
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "URL",
+            "dcat:accessURL": "http://www.earthchem.org/library/browse/view?id=6",
+            "url": "http://www.earthchem.org/library/browse/view?id=6",
+            "encodingFormat": "application/vnd.ms-excel"
+        }
+    ],
+    "identifier": [{
+        "@id": " doi:10.1594/IEDA/100037",
+        "@type": "PropertyValue",
+        "additionalType": [
+            "geolink:Identifier",
+            "datacite:Identifier"
+        ],
+        "propertyID": "datacite:doi",
+        "url": "http://dx.doi.org/10.1594/IEDA/100037",
+        "value": "10.1594/IEDA/100037"
+    }],
+    "isPartOf": [{
+        "@id": "http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0241826",
+        "@type": "CreativeWork",
+        "additionalType": "earthcollab:Project",
+        "funder": {
+            "@type": "Organization",
+            "name": "National Science Foundation"
+        }
+    }],
+    "keywords": [
+        "Regional (Continents, Oceans)",
+        "Back Arc Basin",
+        "Hydrothermal Vent",
+        "Spreading Center",
+        "Chemistry:Fluid",
+        "Geochemistry",
+        "Marine Geoscience",
+        "Solid Earth",
+        "Eastern Lau Basin Spreading Center",
+        "R2K (Ridge 2000) funded",
+        "TUIM05MV",
+        "Lau Basin",
+        "Pacific Ocean",
+        "Lau Basin, Pacific"
+    ],
+    "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "publishingPrinciples": {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "@type": "DigitalDocument",
+            "additionalType": "gdx:Protocol-License",
+            "name": "Dataset Usage License",
+            "description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+        }
+    },
+    "spatialCoverage": [
+        {
+            "@type": "Place",
+            "name": "Lau Basin, Pacific",
+            "geo": [
+                {
+                    "@type": "GeoShape",
+                    "box": "-176.6085, -22.2157 -176.1334, -20.0526"
+                },
+                {
+                    "@type": "GeoCoordinates",
+                    "longitude": "-176.6085",
+                    "latitude": "-22.2157"
+                }
+            ]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6084",
+                "latitude": "-22.2155"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6079",
+                "latitude": "-22.2142"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.602",
+                "latitude": "-22.1817"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.602",
+                "latitude": "-22.1816"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6012",
+                "latitude": "-22.1807"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6017",
+                "latitude": "-22.1806"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6015",
+                "latitude": "-22.1805"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6015",
+                "latitude": "-22.1804"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.6009",
+                "latitude": "-22.1802"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.601",
+                "latitude": "-22.1801"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5689",
+                "latitude": "-21.991"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5691",
+                "latitude": "-21.9906"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5689",
+                "latitude": "-21.9902"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5682",
+                "latitude": "-21.9897"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5685",
+                "latitude": "-21.9884"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5677",
+                "latitude": "-21.988"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5679",
+                "latitude": "-21.9879"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.5679",
+                "latitude": "-21.9878"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1921",
+                "latitude": "-20.7665"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1931",
+                "latitude": "-20.7659"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1915",
+                "latitude": "-20.7633"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1914",
+                "latitude": "-20.7633"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1912",
+                "latitude": "-20.763"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1911",
+                "latitude": "-20.7627"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1907",
+                "latitude": "-20.7612"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1896",
+                "latitude": "-20.761"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.191",
+                "latitude": "-20.7609"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1912",
+                "latitude": "-20.7603"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1909",
+                "latitude": "-20.7603"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1374",
+                "latitude": "-20.3179"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1374",
+                "latitude": "-20.3178"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.137",
+                "latitude": "-20.3178"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1372",
+                "latitude": "-20.3177"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1366",
+                "latitude": "-20.3167"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1365",
+                "latitude": "-20.3167"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1363",
+                "latitude": "-20.3167"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1362",
+                "latitude": "-20.3166"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1365",
+                "latitude": "-20.3164"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1363",
+                "latitude": "-20.3164"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1337",
+                "latitude": "-20.0539"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1335",
+                "latitude": "-20.0539"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1334",
+                "latitude": "-20.0537"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1337",
+                "latitude": "-20.0531"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1337",
+                "latitude": "-20.053"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1338",
+                "latitude": "-20.0526"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-176.1335",
+                "latitude": "-20.0526"
+            }]
+        }
+    ]
+}
