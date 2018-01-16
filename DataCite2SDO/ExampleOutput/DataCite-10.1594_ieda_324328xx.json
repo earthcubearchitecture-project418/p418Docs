@@ -1,0 +1,145 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.1594/IEDA/324328",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "Hypocenter Catalog Data from the Mid-Atlantic Ridge - Rainbow Vent Field acquired in 2013",
+    "citation": "Sohn, Robert, Canales, JuanPablo, Dunn, Robert (2018), Hypocenter Catalog Data from the Mid-Atlantic Ridge - Rainbow Vent Field acquired in 2013. Integrated Earth Data Applications (IEDA). doi:10.1594/IEDA/324328",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Sohn, Robert"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Canales, JuanPablo"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Dunn, Robert"
+        }
+    ],
+    "datePublished": "2018",
+    "dateCreated": "2018-01-11",
+    "version": "1",
+    "inLanguage": "en",
+    "description": "Abstract: This data set was acquired with Scripps Institution of Oceanography LC4X4 Ocean Bottom Seismometers deployed during R/V Marcus G. Langseth expedition MGL1305 in 2013 (Chief Scientist: Dr. Juan Pablo Canales, Investigators: Dr. Robert Sohn, Dr. Juan Pablo Canales, Dr. Robert Dunn). OBS recovery took place during R/V Pelagia cruise 64PE382. These data files are of Text File (ASCII) format and include Hypocenter Catalog data that were processed after acquisition. The hypocenter catalog is in space delimited text (ASCII) format. The first column is the event origin time. Note that depth is relative to sea level (i.e., -3.0 equals 3 km below sea level). The RMS value is the misfit of the hypocenter location, and only those events with RMS < 0.2 s were published in the journal article, but all locatable events are listed in this catalog. Data were acquired as part of the project(s): Collaborative Research: MARINER: Seismic Investigation of the Rainbow Hydrothermal Field and its Tectono/magmatic Setting, Mid-Atlantic Ridge 36 Degrees 14'N. Funding was provided by NSF award OCE09-61680.",
+    "distribution": [{
+        "@type": "DataDownload",
+        "additionalType": "dcat:distribution",
+        "name": "DOI landing page",
+        "dcat:accessURL": "http://dx.doi.org/10.1594/IEDA/324328",
+        "url": "http://dx.doi.org/10.1594/IEDA/324328",
+        "encodingFormat": "text/plain"
+    }],
+    "identifier": [
+        {
+            "@id": " doi:10.1594/IEDA/324328",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "datacite:doi",
+            "url": "http://dx.doi.org/10.1594/IEDA/324328",
+            "value": "10.1594/IEDA/324328"
+        },
+        {
+            "@id": "24328",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "MGDS",
+            "value": "24328"
+        }
+    ],
+    "keywords": ["Earthquake:Catalog"],
+    "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "publishingPrinciples": {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "@type": "DigitalDocument",
+            "additionalType": "gdx:Protocol-License",
+            "name": "Dataset Usage License",
+            "description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+        }
+    },
+    "spatialCoverage": [{
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "box": "-33.888098, 36.229526 -33.887742, 36.229814"
+        }
+    }]
+}
