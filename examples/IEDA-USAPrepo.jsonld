@@ -98,36 +98,27 @@
             }
         }]
     },
-    "availableChannel": [
+    "potentialAction": [
         {
-            "@type": "ServiceChannel",
-            "serviceUrl": "http://www.earthchem.org/library/search",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://www.earthchem.org/library/search",
-                "additionalType": "gdx:SearchService",
-                "name": "EarthChem Library Search",
-                "description": "Search for datasets in the EarthChem Library repository",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "http://www.earthchem.org/library/search"
-                }
+            "@type": "SearchAction",
+            "@id": "http://www.earthchem.org/library/search",
+            "additionalType": "gdx:SearchService",
+            "name": "EarthChem Library Search",
+            "description": "Search for datasets in the EarthChem Library repository",
+            "target": {
+                "@type": "EntryPoint",
+                "url": "http://www.earthchem.org/library/search"
             }
         },
         {
-            "@type": "ServiceChannel",
-            "availableLanguage": "en-US",
-            "serviceUrl": "http://www.usap-dc.org/submit",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://www.usap-dc.org/submit",
-                "additionalType": "gdx:SubmissionService",
-                "name": "Submit Data to US Antarctic Program Data Center",
-                "description": "Web application to support submitting a dataset to USAP-DC or Registering a project with the Antarctic Master Directory. Requires a sign in using Google or ORCID (free registration). Datasets will be registered with a DOI after acceptance for accession to repository.",
-                "potentialAction": {
-                    "@type": "CreateAction",
-                    "target": "http://www.earthchem.org/library/submit"
-                }
+            "@type": "CreateAction",
+            "@id": "http://www.usap-dc.org/submit",
+            "additionalType": "gdx:SubmissionService",
+            "name": "Submit Data to US Antarctic Program Data Center",
+            "description": "Web application to support submitting a dataset to USAP-DC or Registering a project with the Antarctic Master Directory. Requires a sign in using Google or ORCID (free registration). Datasets will be registered with a DOI after acceptance for accession to repository.",
+            "target": {
+                "@type": "EntryPoint",
+                "url": "http://www.usap-dc.org/submit"
             }
         }
     ]
