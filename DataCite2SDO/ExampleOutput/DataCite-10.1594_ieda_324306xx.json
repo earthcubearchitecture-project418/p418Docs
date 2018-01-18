@@ -1,0 +1,133 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.1594/IEDA/324306",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "Processed EM302 Swath Bathymetry and Acoustic Backscatter Data from the Lau Back-arc Basin acquired during R/V Falkor expedition FK160407 (2016)",
+    "citation": "Ferrini, Vicki (2017), Processed EM302 Swath Bathymetry and Acoustic Backscatter Data from the Lau Back-arc Basin acquired during R/V Falkor expedition FK160407 (2016). Integrated Earth Data Applications (IEDA). doi:10.1594/IEDA/324306",
+    "creator": [{
+        "@type": "Person",
+        "additionalType": "geolink:Person",
+        "name": "Ferrini, Vicki"
+    }],
+    "datePublished": "2017",
+    "description": "Abstract: This data set was acquired with a Kongsberg Maritime EM302 Multibeam Sonar during R/V Falkor expedition FK160407 conducted in 2016 (Chief Scientist: Dr. Charles Fisher, Investigator: Dr. Vicki Ferrini). These data files are of MBSystem-compatible format and include Acoustic Backscatter and Swath Bathymetry data that were processed after acquisition. Data were acquired as part of the project: Collaborative Research: Ecosystem dynamics of Western Pacific hydrothermal vent communities associated with polymetallic sulfide deposits. Ship time was provided by Schmidt Ocean Institute and additional funding was provided by NSF Award(s): OCE15-36331, OCE15-36650, OCE15-36653, OCE15-37807.",
+    "distribution": [{
+        "@type": "DataDownload",
+        "additionalType": "dcat:distribution",
+        "name": "DOI landing page",
+        "dcat:accessURL": "http://dx.doi.org/10.1594/IEDA/324306",
+        "url": "http://dx.doi.org/10.1594/IEDA/324306",
+        "encodingFormat": "application/octet-stream"
+    }],
+    "identifier": [
+        {
+            "@id": " doi:10.1594/IEDA/324306",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "datacite:doi",
+            "url": "http://dx.doi.org/10.1594/IEDA/324306",
+            "value": "10.1594/IEDA/324306"
+        },
+        {
+            "@id": "24306",
+            "@type": "PropertyValue",
+            "additionalType": [
+                "geolink:Identifier",
+                "datacite:Identifier"
+            ],
+            "propertyID": "MGDS",
+            "value": "24306"
+        }
+    ],
+    "keywords": [
+        "Backscatter:Acoustic",
+        "Bathymetry:Swath"
+    ],
+    "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "publishingPrinciples": {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "@type": "DigitalDocument",
+            "additionalType": "gdx:Protocol-License",
+            "name": "Dataset Usage License",
+            "description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+        }
+    },
+    "spatialCoverage": [{
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "box": "-176.742902, -22.400739 -174.908822, -20.040408"
+        }
+    }]
+}

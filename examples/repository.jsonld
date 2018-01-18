@@ -225,7 +225,7 @@
                     },
                     "query-input": {
                         "@type": "PropertyValueSpecification",
-                        "description": "A page number specifying the desired page of the sitemap"
+                        "description": "A page number specifying the desired page of the sitemap",
                         "valueRequired": false,
                         "valueName": "page",
                         "valuePattern": "^[1-9][0-9]*$",

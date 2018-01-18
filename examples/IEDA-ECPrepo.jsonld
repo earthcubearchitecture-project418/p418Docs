@@ -1,0 +1,193 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "gdx": "https://geodex.org/voc/"
+    },
+    "@type": "Service",
+    "@id": "http://www.earthchem.org/portal",
+    "additionalType": "gdx:ResearchRepositoryService",
+    "name": "EarthChem Portal",
+    "url": "http://www.earthchem.org/portal",
+    "category": ["Geochemistry"],
+    "description": "The EarthChem Portal offers a 'one-stop-shop' for geochemistry data of the solid earth with access to complete data from multiple data systems operated by different providers. The portal returns integrated search results from the federated databases PetDB (IEDA), SedDB (IEDA), GEOROC (MPI Mainz, Germany), NavDat (IEDA), USGS, and DARWIN (JAMSTEC, Japan). The portal features mapping and visualization tools.",
+    "sameAs": "https://www.re3data.org/repository/r3d100010412",
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "http://purl.org/spar/datacite/doi",
+        "value": "10.17616/R3DK6N",
+        "url": "http://doi.org/10.17616/R3DK6N"
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.earthchem.org/sites/earthchem.org/files/arthemia_logo.jpg"
+    },
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility\u2019s mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "publishingPrinciples": [
+        {
+    "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "@type": "DigitalDocument",
+    "additionalType": "gdx:Protocol-License",
+    "name": "Dataset Usage License",
+    "description":"Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+  },
+            {
+                "@type": "DigitalDocument",
+                "@id": "https://www.iedadata.org/help/data-publication/",
+                "additionalType": "gdx:Protocol-TermsOfUse",
+                "name": "Data Publication Policy",
+                "url": "https://www.iedadata.org/help/data-publication/",
+                "fileFormat": "text/html"
+            },
+            {
+                "@type": "DigitalDocument",
+                "@id": "http://www.earthchem.org/library/help/guidelines",
+                "additionalType": "gdx:Protocol-ResourceSubmissionPolicy",
+                "name": "Data Submission Guidelines",
+                "url": "http://www.earthchem.org/library/help/guidelines",
+                "fileFormat": "text/html"
+            }
+        ]
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "EarthChem Database",
+        "itemListElement": [{
+            "@type": "DataCatalog",
+            "@id": "http://ecp.iedadata.org/",
+            "name": "EarthChem Portal Database",
+            "description": "This Portal aggregates data from Petdb, NAVDAT, GeoRock and Ganseki. Results can be downloaded in Excel spreadsheets or as csv text files.",
+            "publishingPrinciples": [{
+                "@type": "DigitalDocument",
+                "@id": "http://www.earthchem.org/library/disclaimer",
+                "additionalType": "gdx:Protocol-TermsOfUse",
+                "name": "Terms of Use",
+                "url": "http://www.earthchem.org/library/disclaimer",
+                "fileFormat": "text/html"
+            }],
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "public",
+                "name": "General Public"
+            }
+        }]
+    },
+    "availableChannel": [
+        {
+            "@type": "ServiceChannel",
+            "serviceUrl": "http://ecp.iedadata.org/",
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://ecp.iedadata.org/",
+                "additionalType": "gdx:SearchService",
+                "name": "EarthChem Geochemical Data Search",
+                "description": "Link to web page enabling users to construct and submit queries to the EarthChem Database, review results, and download data in Excel or CSV files.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "http://ecp.iedadata.org/",
+                    "httpMethod": "GET"
+                }
+            }
+        },
+        {
+            "@type": "ServiceChannel",
+            "availableLanguage": "en-US",
+            "serviceUrl": "http://ecp.iedadata.org/wfs/ows",
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://ecp.iedadata.org/wfs/ows?service=wfs&version=1.0.0&request=GetCapabilities",
+                "additionalType": "gdx:SearchService",
+                "name": "OGC Web Feature Service for EarthChem Data",
+                "description": "Link for GetCapabilities document to access data from the EarthChem database. The service defines feature types for samples, major elements, trace elements, isotopes, noble gases, rare earth elements, stable isotopes, volatiles, and whole rock major, trace and isotope data aggregated.",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "additionalType": "OGC WFS",
+                    "target": "http://ecp.iedadata.org/wfs/ows?service=wfs&version=1.0.0&request=GetCapabilities",
+                    "more": "need to describe feature types, provide WFS templates"
+                },
+                "mainEntityOfPage": [{
+                    "@type": "Web Site",
+                    "fileformat": "HTML",
+                    "name": "About EarthChem WFS Service",
+                    "keywords": "Earthchem, geochemistry",
+                    "description": "Web site with documentation on the EarthChem system",
+                    "url": "http://ecp.iedadata.org/webservices"
+                }]
+            }
+        },
+        {
+            "@type": "ServiceChannel",
+            "availableLanguage": "en-US",
+            "serviceUrl": "http://ecp.iedadata.org/restsearchservice",
+            "providesService": {
+                "@type": "Service",
+                "@id": "http://ecp.iedadata.org/restsearchservice",
+                "name": "EarthChem REST web service",
+                "description": "RESTful web service for accessing EarthChem database",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "http://ecp.iedadata.org/restsearchservice"
+                },
+                "mainEntityOfPage": [{
+                    "@type": "Web Site",
+                    "fileformat": "HTML",
+                    "name": "EarthChem REST Server Documentation",
+                    "keywords": "Earthchem, geochemistry",
+                    "description": "Web site with documentation for the EarthChem REST services",
+                    "url": "http://ecp.iedadata.org/rest_search_documentation/"
+                }]
+                
+            }
+        }
+    ]
+}

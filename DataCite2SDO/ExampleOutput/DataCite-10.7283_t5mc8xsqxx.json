@@ -1,0 +1,67 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.7283/T5MC8XSQ",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "RAPID Nevado del Ruiz Volcano GPS Network",
+    "alternateName": "PRMO-PRMO_NdR_COL2016 P.S.",
+    "citation": "Timothy H. Dixon, Glen Mattioli (2017), RAPID Nevado del Ruiz Volcano GPS Network. UNAVCO, Inc.. doi:10.7283/T5MC8XSQ",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Timothy H. Dixon"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Glen Mattioli"
+        }
+    ],
+    "datePublished": "2017",
+    "description": "",
+    "distribution": [{
+        "@type": "DataDownload",
+        "additionalType": "dcat:distribution",
+        "name": "DOI landing page",
+        "dcat:accessURL": "http://dx.doi.org/10.7283/T5MC8XSQ",
+        "url": "http://dx.doi.org/10.7283/T5MC8XSQ"
+    }],
+    "identifier": [{
+        "@id": " doi:10.7283/T5MC8XSQ",
+        "@type": "PropertyValue",
+        "additionalType": [
+            "geolink:Identifier",
+            "datacite:Identifier"
+        ],
+        "propertyID": "datacite:doi",
+        "url": "http://dx.doi.org/10.7283/T5MC8XSQ",
+        "value": "10.7283/T5MC8XSQ"
+    }],
+    "provider": {
+        "@type": "Organization",
+        "name": "UNAVCO, Inc."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "UNAVCO, Inc."
+    },
+    "spatialCoverage": [{
+        "@type": "Place",
+        "geo": [{
+            "@type": "GeoCoordinates",
+            "longitude": "-75.451324",
+            "latitude": "4.801165"
+        }]
+    }]
+}
