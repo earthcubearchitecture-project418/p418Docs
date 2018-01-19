@@ -53,7 +53,7 @@ following the format specified at ref 5.
 
 1. Original blog post: https://research.googleblog.com/2017/01/facilitating-discovery-of-public.html 
 1. Guides https://developers.google.com/search/docs/data-types/datasets 
-1. Google Job Search: https://careers.google.com/jobs 
+1. [Google Job Search example](https://www.google.com/search?source=hp&ei=-wtWWoadMOPI_QbXjZ_gCw&q=jobs+near+me&oq=jobs+near+me&gs_l=psy-ab.3..35i39k1j0i131i20i263k1l2j0l7.2228.6018.0.6144.16.14.1.0.0.0.145.1151.9j4.14.0....0...1c.1.64.psy-ab..1.15.1241.6..0i67k1j0i131k1j0i20i264k1j0i131i67k1.83.OCgdP4kVKiU&ibp=htl;jobs&sa=X&ved=0ahUKEwicq4XGt83YAhUMct8KHR2wDbAQiYsCCEUoAQ#fpstate=tldetail&htidocid=s1_i1Mg811oDQNq2AAAAAA%3D%3D&htivrt=jobs)
 1. Google Scholar: https://scholar.google.com/ 
 1. Sitemap protocol https://www.sitemaps.org/protocol.html 
     1. Sitemap examples http://opencoredata.org/sitemap.xml 
@@ -61,6 +61,6 @@ following the format specified at ref 5.
     1. Landing page with markup example http://opencoredata.org/doc/dataset/bcd15975-680c-47db-a062-ac0bb6e66816 
     1. [Above landing page run through Google Structure Data Testing](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2Fopencoredata.org%2Fdoc%2Fdataset%2Fbcd15975-680c-47db-a062-ac0bb6e66816)  Note only focus on detected *dataset* as there are errors in other JSON-LD in this page at this time. 
 1. Schema.org and type dataset: http://schema.org  http://schema.org/DataSet
-
-
+1. Link to P418 presentation to AGU Enabling FAIR Data group https://agu.zoom.us/recording/play/l8ms1mCG7BMJxtf9SV6lK41_nj09yrqcr2KgQl6RnuSLd1Nhlt-USmY3-WKUbrMl 
+1. [Chris Sater at ESIP 2018 Winter meeting](https://youtu.be/6-2gOSD_bAQ?t=56m5s)
 

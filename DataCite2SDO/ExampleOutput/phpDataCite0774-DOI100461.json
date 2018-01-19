@@ -1,0 +1,193 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.1594/IEDA/100461",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "New York Weather Station Data (2012)",
+    "citation": "Susan L. Brantley, Tim White, Collin Duffy, Di Keller, Ashlee L. Dere, Rich April (2014), New York Weather Station Data (2012). Interdisciplinary Earth Data Alliance (IEDA). doi:10.1594/IEDA/100461",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Susan L. Brantley",
+            "givenName": "Susan",
+            "familyName": "Brantley"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Tim White",
+            "givenName": "Tim",
+            "familyName": "White"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Collin Duffy",
+            "givenName": "Collin",
+            "familyName": "Duffy"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Di Keller",
+            "givenName": "Di",
+            "familyName": "Keller"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Ashlee L. Dere",
+            "givenName": "Ashlee",
+            "familyName": "Dere"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Rich April",
+            "givenName": "Rich",
+            "familyName": "April"
+        }
+    ],
+    "datePublished": "2014",
+    "description": "Abstract: Weather stations deployed across the Critical Zone Observatory (CZO) Shale Transect, including sites in New York, Virginia, Tennessee, Alabama and Puerto Rico, provide continuous measurements of climatic conditions influencing shale weathering. Measurements are recorded every two hours and include precipitation, air temperature, relative humidity, solar radiation, wind speed, soil temperature, soil moisture and soil electrical conductivity. ; Other Description: Ashlee Dere, (2014), Rates and mechanisms of shale weathering across a latitudinal climosequence, Ph.D. Dissertation, The Pennsylvania State University",
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "DOI landing page",
+            "dcat:accessURL": "http://dx.doi.org/10.1594/IEDA/100461",
+            "url": "http://dx.doi.org/10.1594/IEDA/100461",
+            "encodingFormat": "application/vnd.ms-excel"
+        },
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "URL",
+            "dcat:accessURL": "http://www.earthchem.org/library/browse/view?id=774",
+            "url": "http://www.earthchem.org/library/browse/view?id=774",
+            "encodingFormat": "application/vnd.ms-excel"
+        }
+    ],
+    "identifier": [{
+        "@id": " doi:10.1594/IEDA/100461",
+        "@type": "PropertyValue",
+        "additionalType": [
+            "geolink:Identifier",
+            "datacite:Identifier"
+        ],
+        "propertyID": "datacite:doi",
+        "url": "http://dx.doi.org/10.1594/IEDA/100461",
+        "value": "10.1594/IEDA/100461"
+    }],
+    "isPartOf": [{
+        "@id": "http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0725019",
+        "@type": "CreativeWork",
+        "additionalType": "earthcollab:Project",
+        "funder": {
+            "@type": "Organization",
+            "name": "National Science Foundation"
+        }
+    }],
+    "keywords": [
+        "Regional (Continents, Oceans)",
+        "NearSurface/CriticalZone",
+        "Environmental data",
+        "air temperature",
+        "CZO",
+        "precipitation",
+        "relative humidity",
+        "Shale Transect",
+        "soil electrical conductivity",
+        "soil moisture",
+        "soil temperature",
+        "solar radiation",
+        "wind speed",
+        "New York"
+    ],
+    "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "publishingPrinciples": {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "@type": "DigitalDocument",
+            "additionalType": "gdx:Protocol-License",
+            "name": "Dataset Usage License",
+            "description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+        }
+    },
+    "spatialCoverage": [{
+        "@type": "Place",
+        "name": "New York",
+        "geo": [{
+            "@type": "GeoCoordinates",
+            "longitude": "-75.276067",
+            "latitude": "43.031717"
+        }]
+    }]
+}

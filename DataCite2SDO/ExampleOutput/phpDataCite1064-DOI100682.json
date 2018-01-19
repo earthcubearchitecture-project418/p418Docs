@@ -1,0 +1,2461 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.1594/IEDA/100682",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "Major and trace-element analyses of Cenozoic volcanic rocks from southern Oregon, northern Nevada, and northeastern California",
+    "citation": "Victor E. Camp, Martin E. Ross (2017), Major and trace-element analyses of Cenozoic volcanic rocks from southern Oregon, northern Nevada, and northeastern California. Interdisciplinary Earth Data Alliance (IEDA). doi:10.1594/IEDA/100682",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Victor E. Camp",
+            "givenName": "Victor",
+            "familyName": "Camp"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "name": "Martin E. Ross",
+            "givenName": "Martin",
+            "familyName": "Ross"
+        }
+    ],
+    "datePublished": "2017",
+    "description": "Abstract: Major- and trace-element XRF analyses on two-hundred and ninety-nine Cenozoic volcanic rocks in southeastern Oregon northern Nevada, and northeastern California. These analyses are subdivided into 30-20 Ma rocks of ancestral Northern Cascade back-arc region, 16.7-15 Ma rocks of the Columbia Basin-Nevada magmatic belt, and 16.7-8 Ma rocks of the southern segment of the ancestral Cascades in the Oregon-Nevada-California tri-state region.",
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "DOI landing page",
+            "dcat:accessURL": "http://dx.doi.org/10.1594/IEDA/100682",
+            "url": "http://dx.doi.org/10.1594/IEDA/100682",
+            "encodingFormat": "application/vnd.ms-excel"
+        },
+        {
+            "@type": "DataDownload",
+            "additionalType": "dcat:distribution",
+            "name": "URL",
+            "dcat:accessURL": "http://www.earthchem.org/library/browse/view?id=1064",
+            "url": "http://www.earthchem.org/library/browse/view?id=1064",
+            "encodingFormat": "application/vnd.ms-excel"
+        }
+    ],
+    "identifier": [{
+        "@id": " doi:10.1594/IEDA/100682",
+        "@type": "PropertyValue",
+        "additionalType": [
+            "geolink:Identifier",
+            "datacite:Identifier"
+        ],
+        "propertyID": "datacite:doi",
+        "url": "http://dx.doi.org/10.1594/IEDA/100682",
+        "value": "10.1594/IEDA/100682"
+    }],
+    "keywords": [
+        "Regional (Continents, Oceans)",
+        "Chemistry:Rock",
+        "Geochemistry",
+        "Solid Earth",
+        "Ancestral Cascade arc",
+        "Columbia River Basalt",
+        "mantle plume",
+        "Oregon back-arc",
+        "Yellowstone hotspot",
+        "California",
+        "Nevada",
+        "Oregon",
+        "Pacific northwest",
+        "United States",
+        "Pacific northwest,Oregon, Nevada, California, United States"
+    ],
+    "license": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+    "provider": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.iedadata.org/",
+        "name": "Interdisciplinary Earth Data Alliance (IEDA)",
+        "url": "https://www.iedadata.org/",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ""
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Kerstin Lehnert",
+            "email": "lehnert@ldeo.columbia.edu",
+            "url": "http://orcid.org/0000-0001-7036-1977",
+            "contactType": "Director"
+        },
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://viaf.org/viaf/142992181/",
+            "name": "Lamont-Doherty Earth Observatory",
+            "url": "http://www.ldeo.columbia.edu/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "61 Route 9W",
+                "addressLocality": "Palisades",
+                "addressRegion": "NY",
+                "postalCode": "10964-1000",
+                "addressCountry": "USA"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "https://viaf.org/viaf/156836332/",
+                "legalName": "Columbia University",
+                "url": "http://www.columbia.edu/"
+            }
+        },
+        "funder": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000085",
+            "legalName": "Directorate for Geosciences",
+            "alternateName": "NSF-GEO",
+            "url": "http://www.nsf.gov",
+            "parentOrganization": {
+                "@type": "Organization",
+                "@id": "http://dx.doi.org/10.13039/100000001",
+                "legalName": "National Science Foundation",
+                "alternateName": "NSF",
+                "url": "http://www.nsf.gov"
+            }
+        },
+        "publishingPrinciples": {
+            "@id": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+            "@type": "DigitalDocument",
+            "additionalType": "gdx:Protocol-License",
+            "name": "Dataset Usage License",
+            "description": "Creative Commons Attribution-NonCommercial-Share Alike 3.0 United States [CC BY-NC-SA 3.0]",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+        }
+    },
+    "spatialCoverage": [
+        {
+            "@type": "Place",
+            "name": "Pacific northwest,Oregon, Nevada, California, United States",
+            "geo": [
+                {
+                    "@type": "GeoShape",
+                    "box": "-120.613112, 40.352335 41.766282, 43.476502"
+                },
+                {
+                    "@type": "GeoCoordinates",
+                    "longitude": "-115.532247",
+                    "latitude": "40.352335"
+                }
+            ]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.572019",
+                "latitude": "40.355413"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.539969",
+                "latitude": "40.355481"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.539727",
+                "latitude": "40.367118"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.569374",
+                "latitude": "40.367387"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.574385",
+                "latitude": "40.374805"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.287958",
+                "latitude": "40.402885"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.14442",
+                "latitude": "40.428649"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.146745",
+                "latitude": "40.43009"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.147227",
+                "latitude": "40.431457"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.074595",
+                "latitude": "40.432589"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.074896",
+                "latitude": "40.432807"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.323356",
+                "latitude": "40.433364"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.308024",
+                "latitude": "40.435053"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.32852",
+                "latitude": "40.43535"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.346823",
+                "latitude": "40.435978"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.335673",
+                "latitude": "40.43939"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.963544",
+                "latitude": "40.473348"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.966829",
+                "latitude": "40.474997"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.967543",
+                "latitude": "40.475627"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.937634",
+                "latitude": "40.51466"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.939232",
+                "latitude": "40.52272"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.938436",
+                "latitude": "40.524773"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.936031",
+                "latitude": "40.525124"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.935111",
+                "latitude": "40.525301"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.93887",
+                "latitude": "40.525406"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.934279",
+                "latitude": "40.525522"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.933362",
+                "latitude": "40.525614"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.932552",
+                "latitude": "40.526243"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.931688",
+                "latitude": "40.527149"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.931155",
+                "latitude": "40.527509"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.931143",
+                "latitude": "40.52773"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.930801",
+                "latitude": "40.528322"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.930534",
+                "latitude": "40.528882"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.929934",
+                "latitude": "40.529371"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.908271",
+                "latitude": "40.531332"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.908102",
+                "latitude": "40.533325"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.906939",
+                "latitude": "40.533655"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.905755",
+                "latitude": "40.534342"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.911881",
+                "latitude": "40.535282"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.927242",
+                "latitude": "40.537826"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.927721",
+                "latitude": "40.538408"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.927466",
+                "latitude": "40.53872"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.927319",
+                "latitude": "40.538776"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.918608",
+                "latitude": "40.539033"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.918357",
+                "latitude": "40.53922"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.92",
+                "latitude": "40.54"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.92678",
+                "latitude": "40.540018"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926774",
+                "latitude": "40.540312"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926862",
+                "latitude": "40.540618"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926719",
+                "latitude": "40.54076"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.92658",
+                "latitude": "40.540927"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926475",
+                "latitude": "40.541213"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926564",
+                "latitude": "40.541354"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.926268",
+                "latitude": "40.541631"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.539224",
+                "latitude": "40.579673"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.538416",
+                "latitude": "40.58177"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.526003",
+                "latitude": "40.593228"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.695984",
+                "latitude": "40.610465"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.699275",
+                "latitude": "40.61232"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.701008",
+                "latitude": "40.612685"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.610677",
+                "latitude": "40.616078"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.704611",
+                "latitude": "40.617723"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.688482",
+                "latitude": "40.618733"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.704598",
+                "latitude": "40.620006"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.70586",
+                "latitude": "40.620357"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.688785",
+                "latitude": "40.620793"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.605495",
+                "latitude": "40.620927"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.705621",
+                "latitude": "40.622301"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.705728",
+                "latitude": "40.622516"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-76.085795",
+                "latitude": "40.62343"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.705864",
+                "latitude": "40.623446"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.613112",
+                "latitude": "40.649554"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.293638",
+                "latitude": "40.659443"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.292801",
+                "latitude": "40.659693"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.413542",
+                "latitude": "40.665193"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.413424",
+                "latitude": "40.665194"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.413715",
+                "latitude": "40.665246"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.41361",
+                "latitude": "40.665251"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.41038",
+                "latitude": "40.681258"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.410434",
+                "latitude": "40.682795"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.410784",
+                "latitude": "40.684592"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.399503",
+                "latitude": "40.687"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.821357",
+                "latitude": "40.697834"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.252105",
+                "latitude": "40.707238"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830445",
+                "latitude": "40.707718"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.831259",
+                "latitude": "40.707753"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830681",
+                "latitude": "40.707896"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.252393",
+                "latitude": "40.708233"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.829973",
+                "latitude": "40.70846"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830288",
+                "latitude": "40.708509"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830491",
+                "latitude": "40.708706"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830786",
+                "latitude": "40.709083"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830929",
+                "latitude": "40.709226"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830639",
+                "latitude": "40.709285"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830407",
+                "latitude": "40.709425"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.252319",
+                "latitude": "40.709485"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.83148",
+                "latitude": "40.709542"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830729",
+                "latitude": "40.709987"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.250873",
+                "latitude": "40.710988"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.830923",
+                "latitude": "40.711794"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-116.829338",
+                "latitude": "40.712499"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.209143",
+                "latitude": "40.71278"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.248736",
+                "latitude": "40.71299"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.208777",
+                "latitude": "40.715087"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.208938",
+                "latitude": "40.717546"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.214637",
+                "latitude": "40.719658"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.217606",
+                "latitude": "40.721556"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.217997",
+                "latitude": "40.723118"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.21835",
+                "latitude": "40.723636"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.219009",
+                "latitude": "40.725074"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.219443",
+                "latitude": "40.725929"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.218971",
+                "latitude": "40.726725"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.218937",
+                "latitude": "40.727276"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.220203",
+                "latitude": "40.728163"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.220969",
+                "latitude": "40.728618"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.221555",
+                "latitude": "40.729152"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.224347",
+                "latitude": "40.732182"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.838177",
+                "latitude": "40.736508"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.229455",
+                "latitude": "40.736654"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.854372",
+                "latitude": "40.739864"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.233906",
+                "latitude": "40.741815"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.860714",
+                "latitude": "40.74227"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.842967",
+                "latitude": "40.766912"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.846088",
+                "latitude": "40.777265"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.820252",
+                "latitude": "40.78513"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.117372",
+                "latitude": "40.799528"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.802562",
+                "latitude": "40.806069"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.799711",
+                "latitude": "40.808365"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.799058",
+                "latitude": "40.808984"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.798554",
+                "latitude": "40.809399"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.798245",
+                "latitude": "40.80963"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.797512",
+                "latitude": "40.810011"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.79697",
+                "latitude": "40.810251"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.794385",
+                "latitude": "40.817423"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.79488",
+                "latitude": "40.817588"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.795825",
+                "latitude": "40.81824"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.798142",
+                "latitude": "40.818292"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.799289",
+                "latitude": "40.818583"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.806002",
+                "latitude": "40.819282"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.810268",
+                "latitude": "40.820667"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.534681",
+                "latitude": "40.822756"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.019224",
+                "latitude": "40.849804"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.800033",
+                "latitude": "40.850361"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.617167",
+                "latitude": "40.850729"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571719",
+                "latitude": "40.853835"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571956",
+                "latitude": "40.85423"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571921",
+                "latitude": "40.854366"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571851",
+                "latitude": "40.854597"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571825",
+                "latitude": "40.854721"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571858",
+                "latitude": "40.854916"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571748",
+                "latitude": "40.855301"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571674",
+                "latitude": "40.855646"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571579",
+                "latitude": "40.855942"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571541",
+                "latitude": "40.856589"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.571387",
+                "latitude": "40.858347"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.605327",
+                "latitude": "40.859471"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.890787",
+                "latitude": "40.860298"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.891289",
+                "latitude": "40.860431"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.020624",
+                "latitude": "40.860738"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.592515",
+                "latitude": "40.878885"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.027643",
+                "latitude": "40.878939"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.921224",
+                "latitude": "40.881691"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.929753",
+                "latitude": "40.882564"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.958301",
+                "latitude": "40.883751"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.602383",
+                "latitude": "40.884532"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.924097",
+                "latitude": "40.884624"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.045995",
+                "latitude": "40.884726"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.046085",
+                "latitude": "40.886217"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.60541",
+                "latitude": "40.889027"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.589763",
+                "latitude": "40.893859"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.585526",
+                "latitude": "40.897838"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.58515",
+                "latitude": "40.900638"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.860219",
+                "latitude": "40.908463"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.482331",
+                "latitude": "40.911343"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.838056",
+                "latitude": "40.911647"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.837498",
+                "latitude": "40.9122"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.838936",
+                "latitude": "40.914553"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.834826",
+                "latitude": "40.914814"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.820014",
+                "latitude": "40.915032"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.837432",
+                "latitude": "40.91546"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.819518",
+                "latitude": "40.92381"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.503511",
+                "latitude": "40.934353"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.201848",
+                "latitude": "40.946333"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.592428",
+                "latitude": "40.994365"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.089303",
+                "latitude": "41.023053"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.08764",
+                "latitude": "41.023315"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.012387",
+                "latitude": "41.087771"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.012926",
+                "latitude": "41.089032"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-115.055755",
+                "latitude": "41.092294"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.31415",
+                "latitude": "41.183021"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.31533",
+                "latitude": "41.183185"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.790062",
+                "latitude": "41.195499"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.081341",
+                "latitude": "41.235706"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.08107",
+                "latitude": "41.236396"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.080992",
+                "latitude": "41.236772"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.08092",
+                "latitude": "41.237399"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.153191",
+                "latitude": "41.258479"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.153642",
+                "latitude": "41.258986"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.150499",
+                "latitude": "41.25923"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.153679",
+                "latitude": "41.259284"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.154467",
+                "latitude": "41.260337"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.154543",
+                "latitude": "41.26072"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.141302",
+                "latitude": "41.262929"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.141693",
+                "latitude": "41.262961"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.141859",
+                "latitude": "41.263192"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.142383",
+                "latitude": "41.26334"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.142913",
+                "latitude": "41.263511"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.143002",
+                "latitude": "41.264087"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.156167",
+                "latitude": "41.264653"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.156549",
+                "latitude": "41.265204"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.14664",
+                "latitude": "41.265951"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.156841",
+                "latitude": "41.26597"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.156791",
+                "latitude": "41.266784"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.157593",
+                "latitude": "41.26777"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.307768",
+                "latitude": "41.268181"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.783767",
+                "latitude": "41.342077"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.779541",
+                "latitude": "41.345845"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.775735",
+                "latitude": "41.348725"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.639956",
+                "latitude": "41.42373"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.640383",
+                "latitude": "41.423961"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.640676",
+                "latitude": "41.424189"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.640661",
+                "latitude": "41.424584"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.64077",
+                "latitude": "41.424983"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.640679",
+                "latitude": "41.425014"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.639587",
+                "latitude": "41.425255"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.640836",
+                "latitude": "41.426132"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.538903",
+                "latitude": "41.545738"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.666417",
+                "latitude": "41.582646"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.274618",
+                "latitude": "41.652945"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.274717",
+                "latitude": "41.652948"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.272451",
+                "latitude": "41.655612"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.746029",
+                "latitude": "41.70925"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.746459",
+                "latitude": "41.709664"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.747127",
+                "latitude": "41.709711"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "41.766282",
+                "latitude": "41.766282"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-118.678152",
+                "latitude": "41.76965"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-118.671838",
+                "latitude": "41.771445"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-118.655653",
+                "latitude": "41.783474"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-118.666542",
+                "latitude": "41.783693"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.938111",
+                "latitude": "42.140153"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.945956",
+                "latitude": "42.14433"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.936924",
+                "latitude": "42.150718"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.934186",
+                "latitude": "42.152841"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.920235",
+                "latitude": "42.155078"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.940754",
+                "latitude": "42.156086"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.914055",
+                "latitude": "42.160713"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.908422",
+                "latitude": "42.170533"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.929556",
+                "latitude": "42.174788"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.921743",
+                "latitude": "42.175402"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.921658",
+                "latitude": "42.175517"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.915863",
+                "latitude": "42.175829"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.915789",
+                "latitude": "42.175887"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.915878",
+                "latitude": "42.17606"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.915981",
+                "latitude": "42.176297"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.915883",
+                "latitude": "42.176575"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-119.91396",
+                "latitude": "42.17721"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.177728",
+                "latitude": "42.578343"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.179685",
+                "latitude": "42.57838"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.17864",
+                "latitude": "42.578381"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.178117",
+                "latitude": "42.578402"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.180609",
+                "latitude": "42.578624"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.181295",
+                "latitude": "42.578761"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.095189",
+                "latitude": "42.785573"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.094766",
+                "latitude": "42.785959"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.094536",
+                "latitude": "42.786236"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.09418",
+                "latitude": "42.786467"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.093789",
+                "latitude": "42.786846"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.093468",
+                "latitude": "42.787346"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.092935",
+                "latitude": "42.787745"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.092543",
+                "latitude": "42.788073"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.091395",
+                "latitude": "42.788396"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.090659",
+                "latitude": "42.788929"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.090243",
+                "latitude": "42.789035"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.089944",
+                "latitude": "42.789258"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.089347",
+                "latitude": "42.789602"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.089047",
+                "latitude": "42.790152"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.088773",
+                "latitude": "42.790203"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.08676",
+                "latitude": "42.7906"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.086554",
+                "latitude": "42.790788"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.085121",
+                "latitude": "42.792088"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.084312",
+                "latitude": "42.792509"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.083803",
+                "latitude": "42.792706"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.083227",
+                "latitude": "42.793439"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.082632",
+                "latitude": "42.793663"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.081966",
+                "latitude": "42.794189"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-120.081582",
+                "latitude": "42.794384"
+            }]
+        },
+        {
+            "@type": "Place",
+            "geo": [{
+                "@type": "GeoCoordinates",
+                "longitude": "-118.188868",
+                "latitude": "43.476502"
+            }]
+        }
+    ]
+}

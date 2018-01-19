@@ -1,17 +1,19 @@
 ### A rolling status update document
-#### Revised Nov 8th 2017 
+#### Revised January 9th 2018
 
-### Working timeline
-* [Short term timeline](./assets/shortTermTimeline.pdf)
+### status update
+An initial index of 3 source (Linked Earth, BCO-DMO and Open Core Data) has been done. A fourth (Neotoma) 
+Is ready for re-indexing but need a small update to address a parsing issue. 
+The test interface at geodex.org will represent this soon.  
 
-A short term timeline has been developed showing some of the next steps.  The main goals
-shown on this are to:
-
-* finish the vocabulary to enable facility and data set description in JSON-LD
-* get the indexers (text, spatial, graph) online (temporal to follow)
-* APIs for use by notebooks and other UIs
-* facility publishing engagement 
-
+#### Next sources 
+* MAGIC https://csdco.umn.edu/ https://www2.earthref.org/MagIC/16403
+* Open Topography  http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.072017.26911.1 
+* R2R   https://csdco.umn.edu/ http://www.rvdata.us/catalog/RR1719
+* CHUASE https://www.cuahsi.org/data-models/publication/
+* CHORDS  http://portal.chordsrt.com/data 
+* BALTO  https://earthcube.org/group/brokered-alignment-long-tail-observations-balto 
+* UNAVCO  http://www.unavco.org/data/doi/doi:10.7283/T5D798JV 
 
 ### Functional Goals
 The following block quote items represent the next set of functional 
@@ -48,22 +50,22 @@ of the items in the *Outline of activities*
      - [ ] DataCite API
 1. Crawling activity
     - [x] Update crawling code to simpler sitemap approach
-    - [ ] Implement JSON-LD framing code 
-        - [ ] for spatial (See Footnote 1)
+    - [-] Implement JSON-LD framing code 
+        - [x] for spatial (See Footnote 1)
         - [ ] for download ref (location and type) (See Footnote 2)
         - [ ] for organization info (See Footnote 3) 
 1. Indexing activity: A simple monolithic crawl / indexing structure is currently pseudo coded for now.  A representation of this is seen in Footnote 4.  
-    - [ ] Resolution of GRPC or microservice pattern for crawler to index connections.  This 
-    may be a bit different given the sitemap pattern making concurrency easier to implement. 
     - [x] Bleve indexer update  prototype
     - [x] JSON-LD indexer blank node resolution issue
     - [x] RDF indexer    (approach identified, was held up by blocking event on blank nodes..  resolved now)
     - [x] Spatial indexer  (geohash approach identified and selected)
     - [ ] Temporal indexer  (Possible back-ends include Timescale (+1) or Prometheus...   internal data model not set yet though)
+    - [ ] Index sharing via the web site (geodex.org)
+    - [ ] update the publishing tools page and link at geodex.org
 1. Interface task list:  As part of this we will also be exploring connections to existing and 
 past EarthCube funded projects. 
     - [ ] Service call for text index search (RESTful)  (See Footnote 5)
-    - [ ] Web based UI (can be more than one) (See Footnote 6)
+    - [x] Web based UI (can be more than one) (See Footnote 6)
     - [ ] Notebook based UI (needs services first) [placeholder](https://github.com/earthcubearchitecture-project418/p418Notebooks/blob/master/Notebook1.ipynb)
     - [ ] Web component development for easy UI development  (Downstream activity)
 

@@ -1,0 +1,68 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "datacite": "http://purl.org/spar/datacite/",
+        "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+        "geolink": "http://schema.geolink.org/1.0/base/main#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dcat": "http://www.w3.org/ns/dcat#"
+    },
+    "@id": " DOI:10.7283/R3T09N",
+    "@type": "Dataset",
+    "additionalType": [
+        "geolink:Dataset",
+        "vivo:Dataset"
+    ],
+    "name": "Tyndall Glacier Mass Balance TLS U-056 PS02 SV04",
+    "citation": "Dr. Dan McGrath, Brendan Hodge (2017), Tyndall Glacier Mass Balance TLS U-056 PS02 SV04. UNAVCO, Inc.. doi:10.7283/R3T09N",
+    "creator": [
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "@id": "http://orcid.org/0000-0002-9462-6842",
+            "name": "Dr. Dan McGrath"
+        },
+        {
+            "@type": "Person",
+            "additionalType": "geolink:Person",
+            "@id": "http://orcid.org/0000-0002-5719-5262",
+            "name": "Brendan Hodge"
+        }
+    ],
+    "datePublished": "2017",
+    "description": "",
+    "distribution": [{
+        "@type": "DataDownload",
+        "additionalType": "dcat:distribution",
+        "name": "DOI landing page",
+        "dcat:accessURL": "http://dx.doi.org/10.7283/R3T09N",
+        "url": "http://dx.doi.org/10.7283/R3T09N"
+    }],
+    "identifier": [{
+        "@id": " doi:10.7283/R3T09N",
+        "@type": "PropertyValue",
+        "additionalType": [
+            "geolink:Identifier",
+            "datacite:Identifier"
+        ],
+        "propertyID": "datacite:doi",
+        "url": "http://dx.doi.org/10.7283/R3T09N",
+        "value": "10.7283/R3T09N"
+    }],
+    "provider": {
+        "@type": "Organization",
+        "name": "UNAVCO, Inc."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "UNAVCO, Inc."
+    },
+    "spatialCoverage": [{
+        "@type": "Place",
+        "geo": [{
+            "@type": "GeoCoordinates",
+            "longitude": "-105.6893",
+            "latitude": "40.3052"
+        }]
+    }]
+}
