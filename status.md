@@ -6,13 +6,14 @@ An initial index of 3 source (Linked Earth, BCO-DMO and Open Core Data) has been
 Is ready for re-indexing but need a small update to address a parsing issue. 
 The test interface at geodex.org will represent this soon.  
 
-Next sources for contact
-* CSDCO https://csdco.umn.edu/ 
-* CHORDS  http://portal.chordsrt.com/data 
+#### Next sources 
+* MAGIC https://csdco.umn.edu/ https://www2.earthref.org/MagIC/16403
 * Open Topography  http://opentopo.sdsc.edu/lidarDataset?opentopoID=OTLAS.072017.26911.1 
+* R2R   https://csdco.umn.edu/ http://www.rvdata.us/catalog/RR1719
+* CHUASE https://www.cuahsi.org/data-models/publication/
+* CHORDS  http://portal.chordsrt.com/data 
 * BALTO  https://earthcube.org/group/brokered-alignment-long-tail-observations-balto 
 * UNAVCO  http://www.unavco.org/data/doi/doi:10.7283/T5D798JV 
-* CHUASE https://www.cuahsi.org/data-models/publication/
 
 ### Functional Goals
 The following block quote items represent the next set of functional 
