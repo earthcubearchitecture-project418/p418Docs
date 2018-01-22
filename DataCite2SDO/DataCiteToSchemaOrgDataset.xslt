@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+    xmlns:common="http://exslt.org/common" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs" version="1.0">
 
     <!-- 
@@ -577,14 +579,22 @@
                             <xsl:with-param name="delimiter" select="string(' ')"/>
                         </xsl:call-template>
                     </xsl:variable>
-                    <xsl:value-of select="$tokenizedList/token[2]/text()"/>
+                    <xsl:choose>  
+                       <!-- kluge to convert treeFragment to node-set, becaues the 
+                       php transformToXml apparently used Xalan -->
+                        <xsl:when test="count(common:node-set($tokenizedList)/token)=4">
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[2]/text()"/>
                     <xsl:text>, </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[1]/text()"/>
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[1]/text()"/>
                     <xsl:text> </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[4]/text()"/>
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[4]/text()"/>
                     <xsl:text>, </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[3]/text()"/>
-
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[3]/text()"/>
+                        </xsl:when>
+                   <xsl:otherwise>
+                       <xsl:value-of select="string('0,0 0,0')"/>
+                   </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:if>
             </xsl:variable>
 
@@ -870,6 +880,7 @@
         </xsl:variable>
         <xsl:variable name="datePublished" select="//*[local-name() = 'publicationYear']"/>
         <xsl:variable name="description">
+            <xsl:variable name="seedDescription">
             <xsl:for-each select="//*[local-name() = 'description']">
                 <xsl:choose>
                     <xsl:when test="@descriptionType = 'Abstract'">
@@ -892,6 +903,16 @@
                     <xsl:text>;       </xsl:text>
                 </xsl:if>
             </xsl:for-each>
+            </xsl:variable>
+          <!-- make sure something is returned, description is required -->
+            <xsl:choose>
+                <xsl:when test="string-length($seedDescription)>0">
+                    <xsl:value-of select="$seedDescription"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="string($name)"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
         <xsl:variable name="DataCatalogName" select="''"/>
         <xsl:variable name="DataCatalogURL" select="''"/>
@@ -937,14 +958,14 @@
 		"description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
 		"logo": {
 			"@type": "ImageObject",
-			"url": ""
+			"url": "http://app.iedadata.org/images/ieda_maplogo.png"
 		},
 		"contactPoint": {
 			"@type": "ContactPoint",
-			"name": "Kerstin Lehnert",
-			"email": "lehnert@ldeo.columbia.edu",
-			"url": "http://orcid.org/0000-0001-7036-1977",
-			"contactType": "Director"
+			"name": "Information Desk",
+			"email": "info@iedadata.org",
+			"url": "https://www.iedadata.org/contact/",
+			"contactType": "Information"
 		},
 		"parentOrganization": {
 			"@type": "Organization",
