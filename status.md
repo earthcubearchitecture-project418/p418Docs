@@ -122,3 +122,10 @@ potential functional goals included data resources assessment and data affordanc
 among other features.  
 
 ![User interface concepts](./images/ui.png)
+
+#### Footnote 7:
+UI concepts: This sketch is included as a discussion aid.  It presents the threaded results
+view where results are grouped by provider with the provider of the highest ranked individual return first
+and so on.  
+
+![User interface concepts](./images/uiThreaded.png)
