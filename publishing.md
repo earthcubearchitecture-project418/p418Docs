@@ -240,3 +240,6 @@ following the format specified at ref 5.
 1. Link to P418 presentation to AGU Enabling FAIR Data group https://agu.zoom.us/recording/play/l8ms1mCG7BMJxtf9SV6lK41_nj09yrqcr2KgQl6RnuSLd1Nhlt-USmY3-WKUbrMl 
 1. [Chris Sater at ESIP 2018 Winter meeting](https://youtu.be/6-2gOSD_bAQ?t=56m5s)
 1. [EarthCube P418 publishing onboarding draft video](https://www.youtube.com/watch?v=7MR9A8Bn0qc&t=11s)
+1. [W3C Data on the web best practices](https://www.w3.org/TR/dwbp/)
+1. [W3C Spatial data on the web best practices](https://www.w3.org/TR/sdw-bp/)
+1. [schema.org external vocabulary](http://schema.org/docs/schemas.html)
