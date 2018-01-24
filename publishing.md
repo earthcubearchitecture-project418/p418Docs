@@ -56,7 +56,7 @@ A basic JSON-LD document using schema.org/Dataset looks like the following.  [Up
       "@id": "https://www.bco-dmo.org/dataset-parameter/665785",
       "@type": "PropertyValue",
       "additionalType": "earthcollab:Parameter",
-      "value": "experiment"
+      "value": "experiment",
       "description": "Experiment identifier"
     },
     {
