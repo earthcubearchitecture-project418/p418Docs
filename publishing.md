@@ -1,19 +1,178 @@
-### Publishing
+# Structured data for data set landing pages
 
-#### About
-Interested in publishing semantic metadata to support data set discovery?  This document describes some of the steps and resources that those interested in publishing semantic 
-metadata along the schema.org patterns can use.  
+## 80/20
+The Pareto principle states that, for many events, roughly 80% of the effects come from 20% of the causes.  That in mind this document constrains itself to only deal with roughly 20% (maybe less even) of the possible material and directions.
 
-#### Basics
-The quick start for the providers will simply be to:
-1. Be able to generate and include JSON-LD semantic metadata using schema.org/Dataset (see Ref 6) terms in the landing page of some set of data resources.  Your best place to start are the Google
-resources [1] and [2]
-1. Create a sitemap for these URLs (see Ref 5)
-1. Tell P418 about it!
+## Goal
+The goal of this is to provide you the basis to develop and publish schema.org/Dataset structured data inside data set landing pages to support organic and other search patterns. 
 
-For further information on the approach and the various types and properties being looked 
-for consult ref 1 and 2.    There are some examples in ref 5 and always feel free to put an
- issue in this repository with questions.  
+## Structure
+The document is broken down in to four sections:
+
+* Deconstruction: What are the minimal initial units I should start with?
+* Selection: What is the initial set of key types and parameters to consider
+* Sequencing: In what order should I learn those units?
+* Feedback: How can I see the outcome to see and consider the outcome
+
+## Deconstruction
+
+The main elements are
+
+1. Generation of the JSON-LD following schema.org patterns
+1. Placing that JSON-LD into a script tag in the HEAD element of your landing pages
+1. generation of a sitemap pointing to these resources
+
+## Selection
+
+##### Basic schema.org/Dataset
+
+The structure data is represented in a flavor of JSON called JSON-LD for Linked Data.  It allows for the connection of context
+to the JSON elements as a gateway to semantics (small S).   Among these *contexts* is schema.org.  For P418 we are focused on 
+[schema.org/Dataset](http://schema.org/Dataset)
+which is derived from the [W3C DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/).
+
+A basic JSON-LD document using schema.org/Dataset looks like the following.  [Up to date version is always here](https://github.com/earthcubearchitecture-project418/p418Vocabulary/blob/master/html/voc/static/schema/examples/resource/dataset-minimal.jsonld)
+
+```JSON
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "datacite": "http://purl.org/spar/datacite/",
+    "earthcollab": "https://library.ucar.edu/earthcollab/schema#",
+    "geolink": "http://schema.geolink.org/1.0/base/main#",
+    "vivo": "http://vivoweb.org/ontology/core#",
+    "dbpedia": "http://dbpedia.org/resource/",
+    "geo-upper": "http://www.geoscienceontology.org/geo-upper#"
+  },
+  "@type": "Dataset",
+  "additionalType": ["geolink:Dataset", "vivo:Dataset"],
+  "name": "Removal of organic carbon by natural bacterioplankton communities as a function of pCO2 from laboratory experiments between 2012 and 2016",
+  "description": "This dataset includes [...   truncated for display]",
+  "url": "https://www.bco-dmo.org/dataset/472032",
+  "version": "2013-11-21",
+  "keywords": "ocean acidification, OA, Dissolved Organic Carbon, DOC, bacterioplankton respiration, pCO2, carbon dioxide, elevated pCO2, oceans",
+  "variableMeasured": [
+    {
+      "@id": "https://www.bco-dmo.org/dataset-parameter/665785",
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "value": "experiment"
+      "description": "Experiment identifier"
+    },
+    {
+      "@id": "https://www.bco-dmo.org/dataset-parameter/665787",
+      "@type": "PropertyValue",
+      "additionalType": "earthcollab:Parameter",
+      "description": "Latitude where water samples were collected; north is positive.",
+      "unitText": "decimal degrees",
+      "url": "https://www.bco-dmo.org/dataset-parameter/665787",
+      "value": "latitude",
+      "valueReference": {
+        "@id": "https://www.bco-dmo.org/parameter/730",
+        "@type": "PropertyValue",
+        "additionalType": "geo-upper:Variable",
+        "description": "latitude, in decimal degrees, North is positive, negative denotes South; Reported in some datasets as degrees, minutes",
+        "unitText": "decimal degrees",
+        "url": "https://www.bco-dmo.org/parameter/730",
+        "value": "latitude"
+      }
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "identifier": {
+    "@id": "https://doi.org/10.1575/1912/bco-dmo.665253",
+    "@type": "PropertyValue",
+    "additionalType": ["geolink:Identifier", "datacite:Identifier"],
+    "propertyID": "datacite:doi",
+    "url": "https://doi.org/10.1575/1912/bco-dmo.665253",
+    "value": "10.1575/1912/bco-dmo.665253"
+  }
+}
+
+```
+
+> ##### Note: Description and links
+> Given the organic (free text) nature of the initial search it is good to have fleshed out descriptions of resources and included types.  Also, > links to external resources (papers, people, other datasets, web sites, etc) 
+> are also good to include when you can.  
+
+> #### Optional: variableMeasured
+> If available for a resource including the variableMeasured type is 
+> encouraged.  Combined with a description this provides another key 
+> signal to the indexers.  
+
+## Sequencing
+There are 3 main operations taking place here and for many groups they can occur concurrently. 
+
+#### 1 Metadata selection and mapping 
+
+For initial guidance reference the 
+[Google Developers Guide for schema.org/Dataset](https://developers.google.com/search/docs/data-types/datasets)  and the 
+[P418 Vocabulary repo](https://github.com/earthcubearchitecture-project418/p418Vocabulary).
+
+#### 2 Generating the JSON-LD
+This likely involve collecting or working with existing metadata to address the parts from the Selection section. 
+Then the JSON-LD has to be generated (either dynamically or through statically) placed into the request response 
+flow of the web site.  
+
+There are many tools and libraries in various programming languages for development teams to leverage at this stage.
+
+See the tools section of the appendix in the document below. 
+
+
+#### 3 Modifying the web publishing workflow and sitemap
+At this point the generated JSON-LD needs to be incorporated into the landing page html.  
+
+```HTML
+<script id="schemaorg" type="application/ld+json">
+          {
+ "@context": {
+  "@vocab": "http://schema.org/",
+  "re3data": "http://example.org/re3data/0.1/"
+ },
+ "@id": "http://opencoredata.org/id/dataset/bcd15975-680c-47db-a062-ac0bb6e66816",
+ "@type": "Dataset",
+ "description": "Janus Thermal Conductivity for ocean drilling 
+
+...
+
+</script>
+
+ ```
+
+
+## Feedback 
+####  How can I see the outcome to see and consider the outcome
+
+We are working on services and interfaces to do that.  The current version lives at [geodex.org](geodex.org).  It's very 
+basic at this time and a newer version plus examples in notebooks is under active development. 
+
+
+## FAQ
+
+ 
+
+- Do you read and store the data associated with landing pages?
+
+	No, we only access and index the structured data a provider exposing about the data, not the data itself.
+
+- Do you store a copy of the metadata?
+
+	Yes,  The text index strips stop words and generates vectors from the metadata.  These are stored but can not be used to generate a full copy of the metadata.  The triples generated from the JSON-LD are stored and do hold a full copy of the metadata. Also, spatial information is pulled and used to make a spatial index.   
+
+- How often do you update the index.  If I make changes how do I get them to show up in the index?
+
+	At this phases in P418 we manually invoke the generation of the index and can do it on a per domain basis.  We can also pull smaller subsets of the data for testing if a provider wishes.   Typically we will run a new index if we make updates to the indexing code or a provider informs us of updates to the metadata.  There is no technical issue with automating the process.   We would want to work with the provider community to explore policy and procedure on that. 
+
+- Do you weigh any of the elements in the document more than others?  Say author or parameter over hosting institution for example?
+
+	We do not currently weigh elements differently.  However, this implementation we use does support this approach and as we get more experience we can begin to weigh various properties differently to improve the resutls
+
+- Do you currently do anything with regard to the semantics of the terms?
+
+	While we do convert and store the JSON-LD as triples and utilize SPARQL queries in our services and interfaces we are not doing anything "semantic" at this time.   Later, with community involvement, connections between things like parameters and other elements could be encoded and leveraged.  We are closely connected to the semantics community in EarthCube and ESIP and look forward to possible opportunities in this area. 
+	
+
+## Appendix
 
 #### Tools
 JSON-LD is valid JSON, so standard developer tools that support JSON can be used.   For some specific JSON-LD and schema.org help though, there are some other resources.
@@ -63,4 +222,4 @@ following the format specified at ref 5.
 1. Schema.org and type dataset: http://schema.org  http://schema.org/DataSet
 1. Link to P418 presentation to AGU Enabling FAIR Data group https://agu.zoom.us/recording/play/l8ms1mCG7BMJxtf9SV6lK41_nj09yrqcr2KgQl6RnuSLd1Nhlt-USmY3-WKUbrMl 
 1. [Chris Sater at ESIP 2018 Winter meeting](https://youtu.be/6-2gOSD_bAQ?t=56m5s)
-
+1. [EarthCube P418 publishing onboarding draft video](https://www.youtube.com/watch?v=7MR9A8Bn0qc&t=11s)
