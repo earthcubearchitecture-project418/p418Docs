@@ -16,11 +16,11 @@ The document is broken down in to four sections:
 
 ## Deconstruction
 
-The main elements are
+The basic units to deal with are
 
-1. Generation of the JSON-LD following schema.org patterns
-1. Placing that JSON-LD into a script tag in the HEAD element of your landing pages
-1. generation of a sitemap pointing to these resources
+1. [schema.org/Dataset](http://schema.org/Dataset) to get an idea of the base properties available for description. Also reference the [Google Developers Guide for schema.org/Dataset](https://developers.google.com/search/docs/data-types/datasets).
+1. [JSON-LD](https://json-ld.org/) as the JSON seralization format for this information
+1. Web publishing workflow to get this JSON-LD into your landing pages and generate a sitemap
 
 ## Selection
 
@@ -31,7 +31,22 @@ to the JSON elements as a gateway to semantics (small S).   Among these *context
 [schema.org/Dataset](http://schema.org/Dataset)
 which is derived from the [W3C DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/).
 
+For initial guidance reference the 
+[Google Developers Guide for schema.org/Dataset](https://developers.google.com/search/docs/data-types/datasets)  and the 
+[P418 Vocabulary repo](https://github.com/earthcubearchitecture-project418/p418Vocabulary).
+
+You will need to begin mapping these types and parameters to the structured data you currently have for your resources. 
+There may be gaps and there will likely be questions about best ways to fit what you have into the proposed pattern.  Feel 
+free to raise these are issues in this repository.
+
+> Note: flag issues with any of all of the people in P418 to have notifications sent to us if you put in an issue.  By 
+> putting your questions in issues, you will help others that follow and also give us a good way to improve documentation. 
+
 A basic JSON-LD document using schema.org/Dataset looks like the following.  [Up to date version is always here](https://github.com/earthcubearchitecture-project418/p418Vocabulary/blob/master/html/voc/static/schema/examples/resource/dataset-minimal.jsonld)
+Often doing an inspection of live examples is beneficial.  Both BCO-DMO and Open Core Data have landing pages containing
+schema.org/Dataset.  Feel free to inspect them and ask questions here about approaches used in them.  You can find links in
+the references at the bottom of this page as items 5.3 5.4 and 5.5. 
+
 
 ```JSON
 {
@@ -218,6 +233,8 @@ following the format specified at ref 5.
     1. Sitemap examples http://opencoredata.org/sitemap.xml 
     1. Sitemap examples BCO-DMO https://www.bco-dmo.org/sitemap.xml (an example of splitting across many)
     1. Landing page with markup example http://opencoredata.org/doc/dataset/bcd15975-680c-47db-a062-ac0bb6e66816 
+    1. BCO-DMO landing page with markup example: https://www.bco-dmo.org/dataset/472032
+    1. https://github.com/earthcubearchitecture-project418/p418Vocabulary/blob/master/html/voc/static/schema/examples/resource/dataset-full.jsonld
     1. [Above landing page run through Google Structure Data Testing](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2Fopencoredata.org%2Fdoc%2Fdataset%2Fbcd15975-680c-47db-a062-ac0bb6e66816)  Note only focus on detected *dataset* as there are errors in other JSON-LD in this page at this time. 
 1. Schema.org and type dataset: http://schema.org  http://schema.org/DataSet
 1. Link to P418 presentation to AGU Enabling FAIR Data group https://agu.zoom.us/recording/play/l8ms1mCG7BMJxtf9SV6lK41_nj09yrqcr2KgQl6RnuSLd1Nhlt-USmY3-WKUbrMl 
