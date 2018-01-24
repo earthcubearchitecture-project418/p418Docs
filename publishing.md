@@ -185,6 +185,12 @@ basic at this time and a newer version plus examples in notebooks is under activ
 - Do you currently do anything with regard to the semantics of the terms?
 
 	While we do convert and store the JSON-LD as triples and utilize SPARQL queries in our services and interfaces we are not doing anything "semantic" at this time.   Later, with community involvement, connections between things like parameters and other elements could be encoded and leveraged.  We are closely connected to the semantics community in EarthCube and ESIP and look forward to possible opportunities in this area. 
+
+- Can we place the JSON-LD into the document via a src tag?
+
+    If you are using the script element as data block, "the src attribute must not be specified".  You could inject the JSON-LD dynamically
+    via Javascript.  However, while groups like Google and tools like [Apache Nutch](http://nutch.apache.org/) or [USCD Data Science Sparkler](https://github.com/USCDataScience/sparkler) can address this the current P418 crawler approach does not dynamically render the DOM prior 
+    to indexing.   A future version might use something like [Chrome Headless](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md) to do this.  
 	
 
 ## Appendix
