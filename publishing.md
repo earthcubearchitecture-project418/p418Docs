@@ -39,7 +39,7 @@ You will need to begin mapping these types and parameters to the structured data
 There may be gaps and there will likely be questions about best ways to fit what you have into the proposed pattern.  Feel 
 free to raise these are issues in this repository.
 
-> Note: flag issues with any of all of the people in P418 to have notifications sent to us if you put in an issue.  By 
+> Note: flag issues with any of the people in P418 to have notifications sent to us.  By 
 > putting your questions in issues, you will help others that follow and also give us a good way to improve documentation. 
 
 A basic JSON-LD document using schema.org/Dataset looks like the following.  [Up to date version is always here](https://github.com/earthcubearchitecture-project418/p418Vocabulary/blob/master/html/voc/static/schema/examples/resource/dataset-minimal.jsonld)
