@@ -101,7 +101,7 @@
             "@type": "DataCatalog",
             "@id": "http://ecp.iedadata.org/",
             "name": "EarthChem Portal Database",
-            "description": "This Portal aggregates data from Petdb, NAVDAT, GeoRock and Ganseki. Results can be downloaded in Excel spreadsheets or as csv text files.",
+            "description": "This Portal aggregates data from PetDB (IEDA), SedDB (IEDA), GEOROC (MPI Mainz, Germany), NavDat (IEDA), USGS, and DARWIN (JAMSTEC, Japan). Results can be downloaded in Excel spreadsheets or as csv text files.",
             "publishingPrinciples": [{
                 "@type": "DigitalDocument",
                 "@id": "http://www.earthchem.org/library/disclaimer",
