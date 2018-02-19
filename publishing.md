@@ -164,23 +164,21 @@ basic at this time and a newer version plus examples in notebooks is under activ
 
 ## FAQ
 
- 
-
 - Do you read and store the data associated with landing pages?
 
 	No, we only access and index the structured data a provider exposing about the data, not the data itself.
 
 - Do you store a copy of the metadata?
 
-	Yes,  The text index strips stop words and generates vectors from the metadata.  These are stored but can not be used to generate a full copy of the metadata.  The triples generated from the JSON-LD are stored and do hold a full copy of the metadata. Also, spatial information is pulled and used to make a spatial index.   
+	Yes,  The text index strips stop words and generates vectors from the metadata.  These are stored but can not be used to generate a full copy of the metadata.  The triples generated from the JSON-LD are stored and do hold a full copy of the metadata. Also, the spatial information is pulled and used to make a spatial index.   
 
 - How often do you update the index.  If I make changes how do I get them to show up in the index?
 
-	At this phases in P418 we manually invoke the generation of the index and can do it on a per domain basis.  We can also pull smaller subsets of the data for testing if a provider wishes.   Typically we will run a new index if we make updates to the indexing code or a provider informs us of updates to the metadata.  There is no technical issue with automating the process.   We would want to work with the provider community to explore policy and procedure on that. 
+	At this phases in P418 we manually invoke the generation of the index and can do it on a per domain basis.  We can also pull smaller subsets of the data for testing if a provider wishes.  Typically we will run a new index if we make updates to the indexing code or a provider informs us of updates to the metadata.  There is no technical issue with automating the process.   However, we would want to work with the provider community to explore policy and procedure on that. 
 
 - Do you weigh any of the elements in the document more than others?  Say author or parameter over hosting institution for example?
 
-	We do not currently weigh elements differently.  However, this implementation we use does support this approach and as we get more experience we can begin to weigh various properties differently to improve the resutls
+	We do not currently weigh elements differently.  However, the implementation we use does support this approach and as we get more experience we can begin to weigh various properties differently to improve the results
 
 - Do you currently do anything with regard to the semantics of the terms?
 
@@ -189,9 +187,16 @@ basic at this time and a newer version plus examples in notebooks is under activ
 - Can we place the JSON-LD into the document via a src tag?
 
     If you are using the script element as data block, "the src attribute must not be specified".  You could inject the JSON-LD dynamically
-    via Javascript.  However, while groups like Google and tools like [Apache Nutch](http://nutch.apache.org/) or [USCD Data Science Sparkler](https://github.com/USCDataScience/sparkler) can address this the current P418 crawler approach does not dynamically render the DOM prior 
+    via Javascript.  However, while groups like Google and tools like [Apache Nutch](http://nutch.apache.org/) or [USCD Data Science Sparkler](https://github.com/USCDataScience/sparkler) can address this, the current P418 crawler approach does not dynamically render the DOM prior 
     to indexing.   A future version might use something like [Chrome Headless](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md) to do this.  
 	
+- How do we filter out EarthCube indexing from our records?
+
+    All indexing is done with a User-Agent set to the value ```EarthCube_DataBot/1.0"```.
+    You can filter all requests made by this User-Agent value from your records. 
+
+
+
 
 ## Appendix
 
