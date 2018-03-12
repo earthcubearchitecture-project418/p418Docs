@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+    xmlns:common="http://exslt.org/common" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs" version="1.0">
 
     <!-- 
@@ -18,7 +20,10 @@
     
     
   Stephen M. Richard
-    2017-01-14
+    2018-01-14
+    
+    2018-03-12.  Remove ' ' before DOI: prefix for @id on the dataset
+    
  -->
 
     <xsl:output method="text" indent="yes" encoding="UTF-8"/>
@@ -90,7 +95,7 @@
             </xsl:variable>
             <xsl:text>{
                 "@type": "Person",
-                "additionalType": "geolink:Person",&#10;</xsl:text>
+                "additionalType": "http://schema.geolink.org/1.0/base/main#Person",&#10;</xsl:text>
             <xsl:if test="$personID and string-length($personID) > 0">
                 <xsl:text>      "@id": "</xsl:text>
                 <xsl:value-of select="$personID"/>
@@ -151,7 +156,7 @@
             </xsl:if>
         </xsl:variable>
         <xsl:if test="($datacite-identifier and $datacite-identifier/@identifierType = 'DOI')">
-            <xsl:text>{&#10;    "@type": "DataDownload",&#10;    "additionalType": "dcat:distribution",&#10;</xsl:text>
+            <xsl:text>{&#10;    "@type": "DataDownload",&#10;    "additionalType": "http://www.w3.org/ns/dcat#distribution",&#10;</xsl:text>
             <xsl:text>      "name":"DOI landing page",&#10;</xsl:text>
             <xsl:variable name="theURL">
                 <xsl:choose>
@@ -172,7 +177,7 @@
                 </xsl:choose>
             </xsl:variable>
 
-            <xsl:text>      "dcat:accessURL": "</xsl:text>
+            <xsl:text>      "http://www.w3.org/ns/dcat#accessURL": "</xsl:text>
             <xsl:value-of select="$theURL"/>
             <xsl:text>",&#10;</xsl:text>
 
@@ -192,11 +197,11 @@
             <xsl:for-each
                 select="//*[local-name() = 'alternateIdentifier' and starts-with(., 'http')]">
                 <xsl:text>{&#10;</xsl:text>
-                <xsl:text>    "@type": "DataDownload",&#10;    "additionalType": "dcat:distribution",&#10;</xsl:text>
+                <xsl:text>    "@type": "DataDownload",&#10;    "additionalType": "http://www.w3.org/ns/dcat#distribution",&#10;</xsl:text>
                 <xsl:text>      "name":"</xsl:text>
                 <xsl:value-of select="@alternateIdentifierType"/>
                 <xsl:text>",&#10;</xsl:text>
-                <xsl:text>      "dcat:accessURL": "</xsl:text>
+                <xsl:text>      "http://www.w3.org/ns/dcat#accessURL": "</xsl:text>
                 <xsl:value-of select="normalize-space(text())"/>
                 <xsl:text>",&#10;</xsl:text>
 
@@ -230,18 +235,18 @@
                 <xsl:when test="starts-with($datacite-identifier, 'doi:')">
                     <xsl:value-of select="normalize-space($datacite-identifier)"/>
                 </xsl:when>
-                <xsl:when test="starts-with($datacite-identifier, 'http://')"> doi:<xsl:value-of
+                <xsl:when test="starts-with($datacite-identifier, 'http://')">doi:<xsl:value-of
                         select="substring-after($datacite-identifier, 'http://dx.doi.org/')"/>
                 </xsl:when>
-                <xsl:when test="$datacite-identifier/@identifierType = 'DOI'"> doi:<xsl:value-of
+                <xsl:when test="$datacite-identifier/@identifierType = 'DOI'">doi:<xsl:value-of
                         select="normalize-space($datacite-identifier)"/>
                 </xsl:when>
             </xsl:choose>
             <xsl:text>",&#10;</xsl:text>
 
             <xsl:text>               "@type": "PropertyValue",
-            "additionalType": ["geolink:Identifier", "datacite:Identifier"],
-            "propertyID": "datacite:doi",&#10;</xsl:text>
+            "additionalType": ["http://schema.geolink.org/1.0/base/main#Identifier", "http://purl.org/spar/datacite/Identifier"],
+            "propertyID": "http://purl.org/spar/datacite/doi",&#10;</xsl:text>
             <xsl:variable name="theURL">
                 <xsl:choose>
                     <xsl:when test="starts-with($datacite-identifier, 'doi:')">
@@ -295,8 +300,8 @@
             <xsl:value-of select="normalize-space(text())"/>
             <xsl:text>",&#10;</xsl:text>
             <xsl:text>                "@type": "PropertyValue",&#10;
-            "additionalType": ["geolink:Identifier",
-            "datacite:Identifier"],
+            "additionalType": ["http://schema.geolink.org/1.0/base/main#Identifier",
+            "http://purl.org/spar/datacite/Identifier"],
             "propertyID": "</xsl:text>
             <xsl:value-of select="@alternateIdentifierType"/>
             <xsl:text>",&#10;</xsl:text>
@@ -314,7 +319,7 @@
         <xsl:for-each select="//*[local-name() = 'subject']">
             <!-- extract one or more keywords from each keywordList element -->
             <xsl:text>"</xsl:text>
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="normalize-space(text())"/>
             <xsl:text>"</xsl:text>
             <xsl:if test="following::*[local-name() = 'subject']">
                 <xsl:text>, </xsl:text>
@@ -322,7 +327,7 @@
         </xsl:for-each>
         <xsl:variable name="subjectsString">
             <xsl:for-each select="//*[local-name() = 'subject']">
-                <xsl:value-of select="text()"/>
+                <xsl:value-of select="normalize-space(text())"/>
             </xsl:for-each>
         </xsl:variable>
         <!--        <xsl:if
@@ -334,7 +339,7 @@
         <xsl:for-each select="//*[local-name() = 'geoLocationPlace']">
             <xsl:if test="not(contains($subjectsString, text()))">
                 <xsl:text>,&#10;"</xsl:text>
-                <xsl:value-of select="text()"/>
+                <xsl:value-of select="normalize-space(text())"/>
                 <xsl:text>"</xsl:text>
                 <!--              <xsl:if test="following::*[local-name() = 'geoLocationPlace']">
                     <xsl:text>, </xsl:text>
@@ -390,7 +395,7 @@
             </xsl:if>
 
             <xsl:text>     "@type": "CreativeWork",
-                "additionalType": "earthcollab:Project",&#10;</xsl:text>
+                "additionalType": "https://library.ucar.edu/earthcollab/schema#Project",&#10;</xsl:text>
 
             <xsl:if test="string-length($awardName) > 0">
                 <xsl:text>     "name": "</xsl:text>
@@ -488,7 +493,7 @@
             <!-- if there's a place name  -->
             <xsl:if test="$placeName and string-length($placeName) > 0">
                 <xsl:text>      "name": "</xsl:text>
-                <xsl:value-of select="$placeName"/>
+                <xsl:value-of select="normalize-space($placeName)"/>
                 <xsl:text>"</xsl:text>
                 <xsl:if
                     test="
@@ -577,14 +582,22 @@
                             <xsl:with-param name="delimiter" select="string(' ')"/>
                         </xsl:call-template>
                     </xsl:variable>
-                    <xsl:value-of select="$tokenizedList/token[2]/text()"/>
+                    <xsl:choose>  
+                       <!-- kluge to convert treeFragment to node-set, becaues the 
+                       php transformToXml apparently used Xalan -->
+                        <xsl:when test="count(common:node-set($tokenizedList)/token)=4">
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[2]/text()"/>
                     <xsl:text>, </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[1]/text()"/>
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[1]/text()"/>
                     <xsl:text> </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[4]/text()"/>
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[4]/text()"/>
                     <xsl:text>, </xsl:text>
-                    <xsl:value-of select="$tokenizedList/token[3]/text()"/>
-
+                            <xsl:value-of select="common:node-set($tokenizedList)/token[3]/text()"/>
+                        </xsl:when>
+                   <xsl:otherwise>
+                       <xsl:value-of select="string('0,0 0,0')"/>
+                   </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:if>
             </xsl:variable>
 
@@ -700,14 +713,14 @@
                 <xsl:text>",&#10;</xsl:text>
             </xsl:if>
 
-            <xsl:text>    "@type": "PropertyValue",&#10;    "additionalType": "earthcollab:Parameter",&#10;</xsl:text>
+            <xsl:text>    "@type": "PropertyValue",&#10;    "additionalType": "https://library.ucar.edu/earthcollab/schema#Parameter",&#10;</xsl:text>
 
             <xsl:if test="$varDescription">
                 <xsl:text>      "description": "</xsl:text>
                 <xsl:value-of select="$varDescription"/>
                 <xsl:text>",&#10;</xsl:text>
             </xsl:if>
-
+            
             <xsl:text>      "unitText": "</xsl:text>
             <xsl:value-of select="$varUnitsText"/>
             <xsl:text>",&#10;</xsl:text>
@@ -809,13 +822,13 @@
                 "dcat":"http://www.w3.org/ns/dcat#"
                 </xsl:text>
         </xsl:variable>
-        <xsl:variable name="DOIuri"> DOI:<xsl:value-of select="//*[local-name() = 'identifier']"/>
+        <xsl:variable name="DOIuri">DOI:<xsl:value-of select="//*[local-name() = 'identifier']"/>
         </xsl:variable>
         <xsl:variable name="DOIvalue">
             <xsl:value-of select="//*[local-name() = 'identifier']"/>
         </xsl:variable>
         <xsl:variable name="name">
-            <xsl:value-of select="//*[local-name() = 'title' and not(@titleType)][1]"/>
+            <xsl:value-of select="normalize-space(//*[local-name() = 'title' and not(@titleType)][1])"/>
         </xsl:variable>
         <xsl:variable name="alternateName">
             <xsl:choose>
@@ -860,7 +873,7 @@
             <xsl:value-of select="//*[local-name() = 'publicationYear']"/>
             <xsl:text>), </xsl:text>
             <!-- will potentially have problems here if there are multiple titles; this just takes the first one -->
-            <xsl:value-of disable-output-escaping="yes" select="//*[local-name() = 'title'][1]"/>
+            <xsl:value-of disable-output-escaping="yes" select="normalize-space(//*[local-name() = 'title'][1])"/>
             <xsl:text>. </xsl:text>
             <xsl:value-of disable-output-escaping="yes"
                 select="normalize-space(string(//*[local-name() = 'publisher']))"/>
@@ -870,6 +883,7 @@
         </xsl:variable>
         <xsl:variable name="datePublished" select="//*[local-name() = 'publicationYear']"/>
         <xsl:variable name="description">
+            <xsl:variable name="seedDescription">
             <xsl:for-each select="//*[local-name() = 'description']">
                 <xsl:choose>
                     <xsl:when test="@descriptionType = 'Abstract'">
@@ -892,6 +906,16 @@
                     <xsl:text>;       </xsl:text>
                 </xsl:if>
             </xsl:for-each>
+            </xsl:variable>
+          <!-- make sure something is returned, description is required -->
+            <xsl:choose>
+                <xsl:when test="string-length($seedDescription)>0">
+                    <xsl:value-of select="normalize-space($seedDescription)"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="string($name)"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
         <xsl:variable name="DataCatalogName" select="''"/>
         <xsl:variable name="DataCatalogURL" select="''"/>
@@ -905,7 +929,7 @@
                 <xsl:when test="count(//*[local-name() = 'rights']) > 1">
                     <xsl:for-each select="//*[local-name() = 'rights']">
                         <xsl:text>"</xsl:text>
-                        <xsl:value-of select="text()"/>
+                        <xsl:value-of select="normalize-space(text())"/>
                         <xsl:text>"</xsl:text>
                         <xsl:if test="following-sibling::*[local-name() = 'rights']">
                             <xsl:text>,&#10;</xsl:text>
@@ -937,14 +961,14 @@
 		"description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
 		"logo": {
 			"@type": "ImageObject",
-			"url": ""
+			"url": "http://app.iedadata.org/images/ieda_maplogo.png"
 		},
 		"contactPoint": {
 			"@type": "ContactPoint",
-			"name": "Kerstin Lehnert",
-			"email": "lehnert@ldeo.columbia.edu",
-			"url": "http://orcid.org/0000-0001-7036-1977",
-			"contactType": "Director"
+			"name": "Information Desk",
+			"email": "info@iedadata.org",
+			"url": "https://www.iedadata.org/contact/",
+			"contactType": "Information"
 		},
 		"parentOrganization": {
 			"@type": "Organization",
@@ -1016,7 +1040,7 @@
         <xsl:value-of select="$DOIuri"/>
         <xsl:text>",&#10;</xsl:text>
         <xsl:text>  "@type": "Dataset",&#10;</xsl:text>
-        <xsl:text>  "additionalType": [&#10;    "geolink:Dataset",&#10;    "vivo:Dataset"&#10;  ],&#10;</xsl:text>
+        <xsl:text>  "additionalType": [&#10;    "http://schema.geolink.org/1.0/base/main#Dataset",&#10;    "http://vivoweb.org/ontology/core#Dataset"&#10;  ],&#10;</xsl:text>
 
         <xsl:text>  "name": "</xsl:text>
         <!-- clean up any double quotes in the text -->

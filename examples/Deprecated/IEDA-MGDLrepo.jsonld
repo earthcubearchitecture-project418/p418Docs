@@ -3,55 +3,56 @@
         "@vocab": "http://schema.org/",
         "gdx": "https://geodex.org/voc/"
     },
-    "@type": "Service",
+    "@type": [
+        "Service",
+        "Organization"
+    ],
     "@id": "",
     "additionalType": "gdx:ResearchRepositoryService",
-    "name": "Marine Geoscience Digital Library",
+    "name": "Marine-Geo Digital Library",
     "url": "http://www.marine-geo.org/library/",
     "category": ["Marine geoscience;"],
     "description": "The Marine-Geo Digital Library is the digital data repository and metadata catalog of the MGDS. Its data resources support scientists working broadly on solid earth science problems ranging from mid-ocean ridge, subduction zone and hotspot processes, to geohazards, continental margin evolution, sediment transport at glaciated and unglaciated margins and interdisciplinary science in the Southern Ocean. The Marine-Geo Digital Library hosts primarily marine geoscience data from the seafloor and subseafloor acquired with ships, towed platforms and submersibles and includes both derived data products and supporting field data. Primary data types include bathymetry, sidescan sonar, near-bottom photos, and active source seismic data, as well as a diverse array of other long-tail sensor data (e.g. in-situ temperature and chemical probes, optical backscatter). A broad suite of processed data and interpreted data products can be accommodated, and current holdings include gridded compilations of geophysical data, maps, microseismicity catalogs, interpretations, photomosaics, animations and visualizations. Other long-tail data that complement marine geoscience data types and lack an alternate disciplinary repository are also curated as part of the Marine-Geo Digital Library",
-    "sameAs": ["https://www.re3data.org/repository/r3d100010273",
-         "RRID:SCR_002164"],
+    "sameAs": [
+        "https://www.re3data.org/repository/r3d100010273",
+        "RRID:SCR_002164"
+    ],
     "identifier": {
         "@type": "PropertyValue",
         "propertyID": "http://purl.org/spar/datacite/doi",
         "value": "10.17616/R38C83",
         "url": "http://doi.org/10.17616/R38C83"
     },
-    "logo": {
-        "@type": "ImageObject",
-        "url": ""
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "name": "MGDL Data Manager",
+        "email": "info@marine-geo.org",
+        "url": "http://www.marine-geo.org/about/contact.php",
+        "contactType": "Information"
     },
-    "provider": {
+    "funder": {
+        "@type": "Organization",
+        "@id": "http://dx.doi.org/10.13039/100000085",
+        "legalName": "Directorate for Geosciences",
+        "alternateName": "NSF-GEO",
+        "url": "http://www.nsf.gov",
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "http://dx.doi.org/10.13039/100000001",
+            "legalName": "National Science Foundation",
+            "alternateName": "NSF",
+            "url": "http://www.nsf.gov"
+        }
+    },
+    "parentOrganization": {
         "@type": "Organization",
         "@id": "https://www.iedadata.org/",
         "name": "Interdisciplinary Earth Data Alliance (IEDA)",
         "url": "https://www.iedadata.org/",
-        "description": "The IEDA data facilitys mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
+        "description": "The IEDA data facility mission is to support, sustain, and advance the geosciences by providing data services for observational geoscience data from the Ocean, Earth, and Polar Sciences. IEDA systems serve as primary community data collections for global geochemistry and marine geoscience research and support the preservation, discovery, retrieval, and analysis of a wide range of observational field and analytical data types. Our tools and services are designed to facilitate data discovery and reuse for focused disciplinary research and to support interdisciplinary research and data integration.",
         "logo": {
             "@type": "ImageObject",
-            "url": ""
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "name": "",
-            "email": "",
-            "url": "",
-            "contactType": ""
-        },
-        "funder": {
-            "@type": "Organization",
-            "@id": "http://dx.doi.org/10.13039/100000085",
-            "legalName": "Directorate for Geosciences",
-            "alternateName": "NSF-GEO",
-            "url": "http://www.nsf.gov",
-            "parentOrganization": {
-                "@type": "Organization",
-                "@id": "http://dx.doi.org/10.13039/100000001",
-                "legalName": "National Science Foundation",
-                "alternateName": "NSF",
-                "url": "http://www.nsf.gov"
-            }
+            "url": "https://www.iedadata.org/wp-content/themes/IEDA/assets/img/logo.png"
         },
         "parentOrganization": {
             "@type": "Organization",
@@ -72,42 +73,33 @@
                 "legalName": "Columbia University",
                 "url": "http://www.columbia.edu/"
             }
-        },
-        "publishingPrinciples": [
-            {
-                "@type": "DigitalDocument",
-                "@id": "https://www.iedadata.org/help/data-publication/",
-                "additionalType": "gdx:Protocol-TermsOfUse",
-                "name": "Data Publication Policy",
-                "url": "https://www.iedadata.org/help/data-publication/",
-                "fileFormat": "text/html"
-            },
-            {
-                "@type": "DigitalDocument",
-                "@id": "http://www.marine-geo.org/submit/",
-                "additionalType": "gdx:Protocol-ResourceSubmissionPolicy",
-                "name": "How to Contribute Data",
-                "url": "http://www.marine-geo.org/submit/",
-                "fileFormat": "text/html"
-            }
-        ]
+        }
     },
+    "publishingPrinciples": [
+        {
+            "@type": "DigitalDocument",
+            "@id": "https://www.iedadata.org/help/data-publication/",
+            "additionalType": "gdx:Protocol-TermsOfUse",
+            "name": "Data Publication Policy",
+            "url": "http://www.marine-geo.org/about/overview.php",
+            "fileFormat": "text/html"
+        },
+        {
+            "@type": "DigitalDocument",
+            "@id": "http://www.marine-geo.org/submit/",
+            "additionalType": "gdx:Protocol-ResourceSubmissionPolicy",
+            "name": "How to Contribute Data",
+            "url": "http://www.marine-geo.org/submit/",
+            "fileFormat": "text/html"
+        }
+    ],
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "",
+        "name": "Marine-Geo Digital Library",
         "itemListElement": [{
             "@type": "DataCatalog",
-            "@id": "http://ecp.iedadata.org/",
+            "@id": "http://www.marine-geo.org/library/",
             "name": "Marine-Geo Digital Library",
-            "description": "",
-            "publishingPrinciples": [{
-                "@type": "DigitalDocument",
-                "@id": "",
-                "additionalType": "gdx:Protocol-TermsOfUse",
-                "name": "Terms of Use",
-                "url": "",
-                "fileFormat": "text/html"
-            }],
             "audience": {
                 "@type": "Audience",
                 "audienceType": "public",
@@ -115,63 +107,98 @@
             }
         }]
     },
-    "availableChannel": [
+    "potentialAction": [
         {
-            "@type": "ServiceChannel",
-            "serviceUrl": "http://ecp.iedadata.org/",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://www.marine-geo.org/tools/new_search/search_map.php",
-                "additionalType": "gdx:SearchService",
-                "name": "Marine Geoscience Data System search",
-                "description": "Link to web page enabling users to construct and submit queries to the MGDS catalog.",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "http://www.marine-geo.org/tools/new_search/search_map.php",
-                    "httpMethod": "GET"
-                }
+            "@type": "SearchAction",
+            "additionalType": "gdx:SearchService",
+            "name": "Marine Geoscience Data System search",
+            "description": "Link to web page enabling users to construct and submit queries to the MGDS catalog.",
+            "target": {
+                "@type": "EntryPoint",
+                "url": "http://www.marine-geo.org/tools/new_search/search_map.php",
+                "httpMethod": "GET"
             }
         },
         {
-            "@type": "ServiceChannel",
-            "availableLanguage": "en-US",
-            "serviceUrl": "http://www.marine-geo.org/services/mapserver/eventwfs",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://www.marine-geo.org/services/mapserver/eventwfs?request=GetCapabilities&service=WFS&version=1.0.0",
-                "additionalType": "gdx:SearchService",
-                "name": "OGC Web Feature Service for MGDS data stations           ",
-                "description": "MGDS WFS  global catalog of station events (cores and dredges, camera tows, CTD stations, instrument deployments, etc.), line events (e.g. seismic lines), and launch events (e.g. dives, towed instrument deployments, flights)..",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "additionalType": "OGC WFS",
-                    "target": "http://www.marine-geo.org/services/mapserver/eventwfs?request=GetCapabilities&service=WFS&version=1.0.0",
-                    "more": "need to describe feature types, provide WFS templates"
-                }
+            "@type": "ReadAction",
+            "additionalType": "gdx:SearchService",
+            "name": "OGC Web Feature Service Capabilities for MGDS data stations",
+            "description": "MGDS WFS  global catalog of station events (cores and dredges, camera tows, CTD stations, instrument deployments, etc.), line events (e.g. seismic lines), and launch events (e.g. dives, towed instrument deployments, flights)..",
+            "target": {
+                "@type": "EntryPoint",
+                "url": "http://www.marine-geo.org/services/mapserver/eventwfs?request=GetCapabilities&service=WFS&version=1.0.0",
+                "httpMethod": "GET"
             }
         },
         {
-            "@type": "ServiceChannel",
-            "availableLanguage": "en-US",
-            "serviceUrl": "http://ecp.iedadata.org/restsearchservice",
-            "providesService": {
-                "@type": "Service",
-                "@id": "http://ecp.iedadata.org/restsearchservice",
-                "name": "EarthChem REST web service",
-                "description": "RESTful web service for accessing EarthChem database",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "http://ecp.iedadata.org/restsearchservice"
+            "@type": "SearchAction",
+            "additionalType": "gdx:SearchService",
+            "name": "MGDS FileServer",
+            "description": "provides access to file and data set level metadata from the Marine-Geo Digital Library including detailed file boundary geometries. This service allows for discovery of data files identifiers for direct download using FileDownloadServer.",
+            "target": [
+                {
+                    "@type": "EntryPoint",
+                    "name": "Documentation and URL Builder",
+                    "url": "http://www.marine-geo.org/tools/fileserverinfo.php"
                 },
-                "mainEntityOfPage": [{
-                    "@type": "Web Site",
-                    "fileformat": "HTML",
-                    "name": "EarthChem REST Server Documentation",
-                    "keywords": "Earthchem, geochemistry",
-                    "description": "Web site with documentation for the EarthChem REST services",
-                    "url": "http://ecp.iedadata.org/rest_search_documentation/"
-                }]
-                
+                {
+                    "@type": "EntryPoint",
+                    "name": "WADL service description",
+                    "url": "http://www.marine-geo.org/services/FileServer/wadl"
+                }
+            ]
+        },
+        {
+            "@type": "SearchAction",
+            "additionalType": "gdx:SearchService",
+            "name": "MGDS ArchiveDownloadServer",
+            "description": "provides a direct interface to download full data sets or up to 10 unrelated files in the Marine-Geo Digital Library as a tar archive. Please ensure that all downloaded files include the provided data provenance README file for downstream use and proper data citation.",
+            "target": [
+                {
+                    "@type": "EntryPoint",
+                    "name": "Documentation and URL Builder",
+                    "url": "http://www.marine-geo.org/tools/archivedownloadserverinfo.php"
+                },
+                {
+                    "@type": "EntryPoint",
+                    "name": "WADL service description",
+                    "url": "http://www.marine-geo.org/services/ArchiveDownloadServer/wadl"
+                }
+            ]
+        },
+        {
+            "@type": "SearchAction",
+            "additionalType": "gdx:SearchService",
+            "name": "MGDS FileDownloadServer",
+            "description": "provides a direct interface to download single files in the Marine-Geo Digital Library. Use FileServer to find the data file identifiers for files of interest and retrieve them with this service. Please ensure that all downloaded files include the provided data provenance README file for downstream use and proper data citation.",
+            "target": [
+                {
+                    "@type": "EntryPoint",
+                    "name": "Documentation and URL Builder",
+                    "url": "http://www.marine-geo.org/tools/filedownloadserverinfo.php"
+                },
+                {
+                    "@type": "EntryPoint",
+                    "name": "WADL service description",
+                    "url": "http://www.marine-geo.org/services/FileDownloadServer/wadl"
+                }
+            ]
+        },
+        {
+            "@type": "SearchAction",
+            "additionalType": "gdx:SearchService",
+            "name": "The MGDL OpenSearch collection-level service",
+            "description": "provides XML records as an Atom feed. The service URL template (where XXX is typically a cruise ID) is: /api/opensearch/1.1/collection/XXX ,",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": " http://www.marine-geo.org/api/opensearch/1.1/collection/{CruiseID}",
+                "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "description":"Provide identifier string for a research cruise, e.g. EW9207",
+                    "valueName": "CruiseID"
+                },
+                "httpMethod": "GET"
             }
         }
     ]
