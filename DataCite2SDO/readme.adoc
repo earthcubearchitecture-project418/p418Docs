@@ -18,5 +18,5 @@ a transform to create schema.org JSON-LD from dataCite XML. The module will work
 * The transform generates a distribution object for the dataset landing page; if http alternate identifiers are included, these are also represented as distributions. 
 * Non http alternate identifiers are included in an identifiers key. 
  
-  SM Richard
-  20180115
+SM Richard
+20180115
