@@ -1,15 +1,5 @@
-## ESIP Summer 2018
+# ESIP Summer 2018 Authoring Session
 
-#### About
-Just a place holder for now but I will flesh this out with the material Adam and I will 
-present on the editing and authoring schema.org type Dataset in JSON-LD format.
-
-
-Quick Thoughts
-* Introduce the schema.org site and the terms vs typical ontology terms
-* Basic simple exmaple 
-* Discuss some issues we ran into
-* Some validations tools (Google SDTT, JSON-LD Playground)  (talk about JSON-LD 1.0 vs 1.1)
-* Introduce using schema and xforms tools
-* introdcue ways to employ SHACL
-
+## About
+This folder just holds a few supporting documents for the ESIP Summer 2018 session.  The main
+information is in the publishing document in the root of this repository. 

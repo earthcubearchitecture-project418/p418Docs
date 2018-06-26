@@ -18,8 +18,9 @@ The document is broken down in to four sections:
 
 The basic units to deal with are
 
-1. [schema.org/Dataset](http://schema.org/Dataset) to get an idea of the base properties available for description. Also reference the [Google Developers Guide for schema.org/Dataset](https://developers.google.com/search/docs/data-types/datasets).
-1. [JSON-LD](https://json-ld.org/) as the JSON seralization format for this information
+1. Schema.org and the [schema.org/Dataset](http://schema.org/Dataset) to get an idea of the base properties available for description. Also reference the [Google Developers Guide for schema.org/Dataset](https://developers.google.com/search/docs/data-types/datasets).
+1. [JSON-LD](https://json-ld.org/) as the JSON seralization format for this information.  Obviously
+JSON-LD is not the only seralization approach, but it is the one selected for this discussion.  
 1. Web publishing workflow to get this JSON-LD into your landing pages and generate a sitemap
 
 ## Selection
@@ -115,7 +116,7 @@ the references at the bottom of this page as items 5.3 5.4 and 5.5.
 > encouraged.  Combined with a description this provides another key 
 > signal to the indexers.  
 
-## Sequencing
+## General Sequence
 There are 3 main operations taking place here and for many groups they can occur concurrently. 
 
 #### 1 Metadata selection and mapping 
@@ -130,8 +131,11 @@ Then the JSON-LD has to be generated (either dynamically or through statically) 
 flow of the web site.  
 
 There are many tools and libraries in various programming languages for development teams to leverage at this stage.
+You can reference https://json-ld.org/ and go to the developers information for a list of current language libraries.  
+It is possible to use core JSON libraries too, but dedicated JSON-LD packages address some of the more semantic and 
+unique aspects of the JSON-LD format.  
 
-See the tools section of the appendix in the document below. 
+See also the tools section below. 
 
 
 #### 3 Modifying the web publishing workflow and sitemap
@@ -155,12 +159,57 @@ At this point the generated JSON-LD needs to be incorporated into the landing pa
  ```
 
 
+## Developing a workflow for non-technical authors
+We have been exploring the potention to use JSON Schema combined with various on-line JSON editors (JSON Schema driven)
+to provide a potential approach to a more visual editing workflow.  The workflow presented here is very ad hoc but exposes
+a potential route a group might take to develop a usable tool.   Such a tool might, for example, leverl the 
+Electron environment to present this approach in a more dedicated tool/manner.
+
+Use a JSON-LD document ([Example Doc 1](./presentations/ESIPSummer2018/exampleDataset.json)) one could load this into somethign like the 
+[JSONschema.net tool](https://jsonschema.net/).     
+
+The results of the above can then been loaded into the online JSON-Editor at https://json-editor.github.io/json-editor/ .  
+
+The results of this then can be load into https://json-ld.org/playground/ to validate that we have 
+well formed JSON-LD.
+
+Though this workflow is rather crude and manual it exposes a route to a defined workflow based around 
+established schema that leverages other tools and software libraries to generate a workable tool.
+
+
+## Validaton?  (SHACL)
+While OWL and RDF Schema offer some ability to "validate" a graph, the W3C SHACL recommendation seems to offer the 
+greatest flexibility and approachability (opinion).
+
+SHACL defines a method to validate a RDF graph against a set of conditions (ref W3C).   In our case we have been working on 
+defining required and recommended parameters (as defined by Goolge) in data sets described using schema.org type dataset.
+
+The required parameters are simple and can be described in the following shape file.
+
+
+Running this against an example data graph (in turtle) results in.
+
+It should be noted we are using the TopQuadrant SHACL implementation.
+
+Running against a file which defines a few "recommendend" parameters results in exposing a missing
+element of the tested data graph.
+
+
+Here we see (results in RDF, thank you ....) that the data graph is missing aspects from the shapes graph.
+
+
+### SHACL references
+* http://shacl.org/playground/
+* https://www.w3.org/TR/shacl/
+* TopQuadrant SHACL code  https://github.com/TopQuadrant/shacl and https://github.com/TopQuadrant/shacl-js
+
+
+
 ## Feedback 
 ####  How can I see the outcome to see and consider the outcome
 
 We are working on services and interfaces to do that.  The current version lives at [geodex.org](geodex.org).  It's very 
 basic at this time and a newer version plus examples in notebooks is under active development. 
-
 
 ## FAQ
 
@@ -254,3 +303,6 @@ following the format specified at ref 5.
 1. [W3C Data on the web best practices](https://www.w3.org/TR/dwbp/)
 1. [W3C Spatial data on the web best practices](https://www.w3.org/TR/sdw-bp/)
 1. [schema.org external vocabulary](http://schema.org/docs/schemas.html)
+1. [Google Jobs indexing API](https://developers.google.com/search/apis/indexing-api/v3/quickstart)
+
+
