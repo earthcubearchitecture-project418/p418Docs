@@ -187,15 +187,114 @@ defining required and recommended parameters (as defined by Goolge) in data sets
 The required parameters are simple and can be described in the following shape file.
 
 
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://www.example.org/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:DescriptionShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path <http://schema.org/description>; 
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:targetClass <http://schema.org/Dataset> .
+
+ex:NameShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path <http://schema.org/name> ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:targetClass <http://schema.org/Dataset> .
+
+
+```
+
+
+
 Running this against an example data graph (in turtle) results in.
+
+```
+fils@xps:~/Semantic/SHACL$ shaclvalidate.sh -datafile ocddataset.ttl -shapesfile requiredShape.ttl
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+[ a       <http://www.w3.org/ns/shacl#ValidationReport> ;
+  <http://www.w3.org/ns/shacl#conforms>
+          true
+] .
+```
+
+
 
 It should be noted we are using the TopQuadrant SHACL implementation.
 
-Running against a file which defines a few "recommendend" parameters results in exposing a missing
+Running against a file which defines a few "recommended" parameters results in exposing a missing
 element of the tested data graph.
 
 
+```
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://www.example.org/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:CitationShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path <http://schema.org/citation>;
+	    sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:targetClass <http://schema.org/Dataset> .
+
+ex:KeywordsShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path <http://schema.org/keywords> ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:targetClass <http://schema.org/Dataset> .
+
+
+
+```
+
 Here we see (results in RDF, thank you ....) that the data graph is missing aspects from the shapes graph.
+
+```
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+[ a       <http://www.w3.org/ns/shacl#ValidationReport> ;
+  <http://www.w3.org/ns/shacl#conforms>
+          false ;
+  <http://www.w3.org/ns/shacl#result>
+          [ a       <http://www.w3.org/ns/shacl#ValidationResult> ;
+            <http://www.w3.org/ns/shacl#focusNode>
+                    <http://opencoredata.org/id/dataset/bcd15975-680c-47db-a062-ac0bb6e66816> ;
+            <http://www.w3.org/ns/shacl#resultMessage>
+                    "Less than 1 values" ;
+            <http://www.w3.org/ns/shacl#resultPath>
+                    <http://schema.org/citation> ;
+            <http://www.w3.org/ns/shacl#resultSeverity>
+                    <http://www.w3.org/ns/shacl#Violation> ;
+            <http://www.w3.org/ns/shacl#sourceConstraintComponent>
+                    <http://www.w3.org/ns/shacl#MinCountConstraintComponent> ;
+            <http://www.w3.org/ns/shacl#sourceShape>
+                    []
+          ]
+] .
+```
 
 
 ### SHACL references
