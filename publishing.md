@@ -3,8 +3,17 @@
 ## 80/20
 The Pareto principle states that, for many events, roughly 80% of the effects come from 20% of the causes.  That in mind this document constrains itself to only deal with roughly 20% (maybe less even) of the possible material and directions.
 
+## Intro
+There is an emerging practice to leverage structured metadata to aid in the discovery of web based resources.  Much of this 
+work is taking place in the context (no pun intended) of schema.org.  This approach has extended to the resource type Dataset. 
+This page will present approaches, tools and references that will aid in the understanding and development of schema.org in 
+JSON-LD and its connection to external vocabularies.  For a more thorough presentation on this visit the Google AI Blog entry 
+of January 24 2017 at https://ai.googleblog.com/2017/01/facilitating-discovery-of-public.html .
+
+
 ## Goal
-The goal of this is to provide you the basis to develop and publish schema.org/Dataset structured data inside data set landing pages to support organic and other search patterns. 
+The goal of this is to provide you the basics to develop and publish schema.org/Dataset structured data inside data set landing pages to support organic and other search patterns.  These pages are focused on delivering some tools and approaches to generating schema.org in JSON-LD.  This would provide a basis to integrate this process into the code or delivery frameworks 
+your systems are using to expose data sets and their associated structured metadata.  
 
 ## Structure
 The document is broken down in to four sections:
