@@ -168,7 +168,8 @@ At this point the generated JSON-LD needs to be incorporated into the landing pa
  ```
 
 
-<a id="non-technical-jsonld-authorship"></a>## Developing a workflow for non-technical authors
+<a id="non-technical-jsonld-authorship"></a>
+## Developing a workflow for non-technical authors
 We have been exploring the potention to use JSON Schema combined with various on-line JSON editors (JSON Schema driven)
 to provide a potential approach to a more visual editing workflow.  The workflow presented here is very ad hoc but exposes
 a potential route a group might take to develop a usable tool.   Such a tool might, for example, leverl the 
