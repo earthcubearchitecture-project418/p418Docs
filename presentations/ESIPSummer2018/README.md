@@ -151,3 +151,10 @@ In 'Table' view of the JSON-LD playground, notice that the URI field has the XSD
 
 See [publishing.md document](https://github.com/earthcubearchitecture-project418/p418Docs/blob/master/publishing.md#non-technical-jsonld-authorship) section for non-technical authors.
 
+# Schema.org Dataset RDF
+
+1. GET http://schema.org/Dataset
+   Accept: application/rdf+xml
+   
+ [RDF as of 7/17/2018](https://raw.githubusercontent.com/earthcubearchitecture-project418/p418Docs/master/presentations/ESIPSummer2018/schemaorg_Dataset.rdfxml)
+
