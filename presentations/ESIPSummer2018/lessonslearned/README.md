@@ -3,10 +3,10 @@
 ![Lessons Learned Room](IMG_20180718_143008.jpg "Great attendance at the ESIP 2018 Summer Schema.org Lessons Learned Session")
 
 ### Presenters
-[Nick Jarboe  EarthRef Magic](JarboeESIP2018.pdf)
-[John Relph](relphESIPSchemaorgLessonsLearned.pdf)
-[Steve Richard](richardsSDOESIPSummer2018.pdf)
-[Jim Riley UNAVCO Geodetic Data Services](rileyLessonsLearnedUNAVCO.pdf)
+* [Nick Jarboe  EarthRef Magic](JarboeESIP2018.pdf)
+* [John Relph](relphESIPSchemaorgLessonsLearned.pdf)
+* [Steve Richard](richardsSDOESIPSummer2018.pdf)
+* [Jim Riley UNAVCO Geodetic Data Services](rileyLessonsLearnedUNAVCO.pdf)
 
 ### Video Link 
 Coming when published by ESIP
