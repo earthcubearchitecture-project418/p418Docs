@@ -1,4 +1,8 @@
+# Schemsa.org type Dataset
 ## ESIP Summer 2018 Lessons Learned
+
+http://geodex.org
+https://github.com/earthcubearchitecture-project418
 
 ![Lessons Learned Room](IMG_20180718_143008.jpg "Great attendance at the ESIP 2018 Summer Schema.org Lessons Learned Session")
 
