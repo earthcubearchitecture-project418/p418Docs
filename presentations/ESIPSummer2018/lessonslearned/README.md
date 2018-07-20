@@ -1,4 +1,4 @@
-# Schemsa.org type Dataset
+# Schema.org type Dataset
 ## ESIP Summer 2018 Lessons Learned
 
 http://geodex.org
