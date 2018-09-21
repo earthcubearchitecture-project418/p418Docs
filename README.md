@@ -3,7 +3,6 @@
 * [Publishing](publishing.md)  Looking to get involved?  Start with this.
 * [Status](./status.md)
 * [Presentation](./presentations)
-* [Hosting Notes](hosting.md)
 
 #### About
 
