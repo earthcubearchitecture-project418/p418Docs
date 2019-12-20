@@ -1,7 +1,17 @@
+# DEPRECATED
+
+This project is no longer actively maintained and will likely be removed with relevant
+documents merged into other repositories.  
+
+Current developments resulting from P418/P419 include Science on Schema and Glenaer
+
+* Gleaner:  https://gleaner.io
+* Science on Schema:  https://github.com/ESIPFed/science-on-schema.org
+
+
 ### Project 418
 
 * [Publishing](publishing.md)  Looking to get involved?  Start with this.
-* [Status](./status.md)
 * [Presentation](./presentations)
 
 #### About
